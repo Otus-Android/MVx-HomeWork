@@ -8,15 +8,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.Card
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Checkbox
-import androidx.compose.material3.CheckboxDefaults
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -41,62 +42,49 @@ fun CoinListScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Title
-        Text(
-            text = "Coins",
-            style = MaterialTheme.typography.headlineMedium.copy(
-                fontWeight = FontWeight.Bold,
-                color = TextPrimary
-            )
-        )
-        
-        Spacer(modifier = Modifier.height(12.dp))
-        
-        // Filter chips
+        // Title row with Highlight Movers chip
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            // Highlight movers chip
-            Card(
-                onClick = { onHighlightMoversToggled(!state.highlightMovers) },
-                colors = CardDefaults.cardColors(
-                    containerColor = if (state.highlightMovers) 
-                        MaterialTheme.colorScheme.primary 
-                    else 
-                        MaterialTheme.colorScheme.surface
-                ),
-                modifier = Modifier.weight(1f)
-            ) {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 12.dp, vertical = 8.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Checkbox(
-                        checked = state.highlightMovers,
-                        onCheckedChange = onHighlightMoversToggled,
-                        colors = CheckboxDefaults.colors(
-                            checkedColor = MaterialTheme.colorScheme.onPrimary,
-                            uncheckedColor = MaterialTheme.colorScheme.onSurface
-                        )
-                    )
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Text(
-                        text = "Highlight movers",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = if (state.highlightMovers) 
-                            MaterialTheme.colorScheme.onPrimary 
-                        else 
-                            MaterialTheme.colorScheme.onSurface
-                    )
-                }
-            }
+            // Title
+            Text(
+                text = "Coins",
+                style = MaterialTheme.typography.headlineMedium.copy(
+                    fontWeight = FontWeight.Bold,
+                    color = TextPrimary
+                )
+            )
             
+            // Highlight movers chip - Material3 FilterChip design
+            FilterChip(
+                onClick = { onHighlightMoversToggled(!state.highlightMovers) },
+                label = {
+                    Text(
+                        text = "Highlight Movers",
+                        style = MaterialTheme.typography.labelMedium
+                    )
+                },
+                leadingIcon = {
+                    if (state.highlightMovers) {
+                        Icon(
+                            imageVector = Icons.Default.Star,
+                            contentDescription = "Highlight Movers",
+                            modifier = Modifier.size(18.dp)
+                        )
+                    }
+                },
+                selected = state.highlightMovers,
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = MaterialTheme.colorScheme.primary,
+                    selectedLabelColor = MaterialTheme.colorScheme.onPrimary,
+                    selectedLeadingIconColor = MaterialTheme.colorScheme.onPrimary
+                )
+            )
         }
         
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(16.dp))
         
         // Coins list
         LazyColumn(
