@@ -33,7 +33,6 @@ import ru.otus.cryptomvisample.ui.theme.TextPrimary
 fun CoinListScreen(
     state: CoinsScreenState,
     onHighlightMoversToggled: (Boolean) -> Unit,
-    onShowAllToggled: (Boolean) -> Unit,
     onToggleFavourite: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -95,42 +94,6 @@ fun CoinListScreen(
                 }
             }
             
-            // Show all chip
-            Card(
-                onClick = { onShowAllToggled(!state.showAll) },
-                colors = CardDefaults.cardColors(
-                    containerColor = if (state.showAll) 
-                        MaterialTheme.colorScheme.primary 
-                    else 
-                        MaterialTheme.colorScheme.surface
-                ),
-                modifier = Modifier.weight(1f)
-            ) {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(horizontal = 12.dp, vertical = 8.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Checkbox(
-                        checked = state.showAll,
-                        onCheckedChange = onShowAllToggled,
-                        colors = CheckboxDefaults.colors(
-                            checkedColor = MaterialTheme.colorScheme.onPrimary,
-                            uncheckedColor = MaterialTheme.colorScheme.onSurface
-                        )
-                    )
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Text(
-                        text = "Show All",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = if (state.showAll) 
-                            MaterialTheme.colorScheme.onPrimary 
-                        else 
-                            MaterialTheme.colorScheme.onSurface
-                    )
-                }
-            }
         }
         
         Spacer(modifier = Modifier.height(12.dp))

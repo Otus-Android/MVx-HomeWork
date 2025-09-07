@@ -92,12 +92,11 @@ fun CoinListScreenContent(
     val viewModel: CoinListViewModel = viewModel(factory = factory)
     val state by viewModel.state.collectAsState()
     
-    CoinListScreen(
-        state = state,
-        onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
-        onShowAllToggled = viewModel::onShowAllToggled,
-        onToggleFavourite = viewModel::onToggleFavourite
-    )
+           CoinListScreen(
+               state = state,
+               onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
+               onToggleFavourite = viewModel::onToggleFavourite
+           )
 }
 
 @Composable

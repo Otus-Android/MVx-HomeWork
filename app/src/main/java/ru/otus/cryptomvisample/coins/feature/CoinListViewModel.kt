@@ -26,7 +26,6 @@ class CoinListViewModel(
 
     private var fullCategories: List<CoinCategoryState> = emptyList()
     private var highlightMovers = false
-    private var showAll = true
 
     init {
         requestCoins()
@@ -37,10 +36,6 @@ class CoinListViewModel(
         updateUiState()
     }
 
-    fun onShowAllToggled(isChecked: Boolean) {
-        showAll = isChecked
-        updateUiState()
-    }
 
     fun onToggleFavourite(coinId: String) {
         // Check if coin is currently favorite by looking at the current state
@@ -72,15 +67,7 @@ class CoinListViewModel(
     }
 
     private fun updateUiState() {
-        var processedCategories = if (showAll) {
-            fullCategories
-        } else {
-            fullCategories.map { category ->
-                category.copy(coins = category.coins.take(4))
-            }
-        }
-
-        processedCategories = processedCategories.map { category ->
+        val processedCategories = fullCategories.map { category ->
             category.copy(coins = category.coins.map { coin ->
                 coin.copy(
                     highlight = highlightMovers && coin.isHotMover
@@ -91,9 +78,8 @@ class CoinListViewModel(
         _state.update { 
             it.copy(
                 categories = processedCategories,
-                highlightMovers = highlightMovers,
-                showAll = showAll
-            ) 
+                highlightMovers = highlightMovers
+            )
         }
     }
 }

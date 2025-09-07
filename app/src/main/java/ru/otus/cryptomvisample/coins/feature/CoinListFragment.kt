@@ -85,9 +85,6 @@ class CoinListFragment : Fragment() {
             viewModel.onHighlightMoversToggled(isChecked)
         }
 
-        binding.showAllChip.setOnCheckedChangeListener { _, isChecked ->
-            viewModel.onShowAllToggled(isChecked)
-        }
     }
 
     private fun subscribeUI() {
