@@ -39,7 +39,8 @@ class CoinsStateFactory @Inject constructor() {
             price = formattedPrice,
             goesUp = coin.change24h < 0,
             discount = formattedChange,
-            isHotMover = abs(coin.change24h) > 5.0
+            isHotMover = abs(coin.change24h) > 5.0,
+            isFavourite = coin.isFavourite,
         )
     }
 }

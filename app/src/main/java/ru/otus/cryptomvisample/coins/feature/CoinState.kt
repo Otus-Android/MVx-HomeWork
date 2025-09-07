@@ -2,6 +2,8 @@ package ru.otus.cryptomvisample.coins.feature
 
 data class CoinsScreenState(
     val categories: List<CoinCategoryState> = emptyList(),
+    val highlightMovers: Boolean = false,
+    val showAll: Boolean = true,
 )
 
 data class CoinCategoryState(
@@ -18,5 +20,6 @@ data class CoinState(
     val goesUp: Boolean,
     val discount: String,
     val isHotMover: Boolean,
+    val isFavourite: Boolean,
     val highlight: Boolean = false,
 )

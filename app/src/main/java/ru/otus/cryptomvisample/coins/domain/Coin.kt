@@ -6,7 +6,8 @@ data class Coin (
     val ticker: String,
     val price: Double,
     val change24h: Double,
-    val iconPath: String
+    val iconPath: String,
+    val isFavourite: Boolean = false
 )
 
 data class CoinCategory (

@@ -11,10 +11,14 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
 import ru.otus.cryptomvisample.coins.domain.ConsumeCoinsUseCase
+import ru.otus.cryptomvisample.coins.domain.SetFavouriteCoinUseCase
+import ru.otus.cryptomvisample.coins.domain.UnsetFavouriteCoinUseCase
 
 class CoinListViewModel(
     private val consumeCoinsUseCase: ConsumeCoinsUseCase,
     private val coinsStateFactory: CoinsStateFactory,
+    private val setFavouriteCoinUseCase: SetFavouriteCoinUseCase,
+    private val unsetFavouriteCoinUseCase: UnsetFavouriteCoinUseCase,
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(CoinsScreenState())
@@ -38,10 +42,24 @@ class CoinListViewModel(
         updateUiState()
     }
 
-    private fun requestCoins() {
-        consumeCoinsUseCase().map { categories ->
-            categories.map { category -> coinsStateFactory.create(category) }
+    fun onToggleFavourite(coinId: String) {
+        // Check if coin is currently favorite by looking at the current state
+        val isCurrentlyFavorite = fullCategories.any { category ->
+            category.coins.any { coin -> coin.id == coinId && coin.isFavourite }
         }
+        
+        if (isCurrentlyFavorite) {
+            unsetFavouriteCoinUseCase(coinId)
+        } else {
+            setFavouriteCoinUseCase(coinId)
+        }
+    }
+
+    private fun requestCoins() {
+        consumeCoinsUseCase()
+            .map { categories ->
+                categories.map { category -> coinsStateFactory.create(category) }
+            }
             .onEach { categoryListState ->
                 fullCategories = categoryListState
                 updateUiState()
@@ -64,10 +82,18 @@ class CoinListViewModel(
 
         processedCategories = processedCategories.map { category ->
             category.copy(coins = category.coins.map { coin ->
-                coin.copy(highlight = highlightMovers && coin.isHotMover)
+                coin.copy(
+                    highlight = highlightMovers && coin.isHotMover
+                )
             })
         }
 
-        _state.update { it.copy(categories = processedCategories) }
+        _state.update { 
+            it.copy(
+                categories = processedCategories,
+                highlightMovers = highlightMovers,
+                showAll = showAll
+            ) 
+        }
     }
 }

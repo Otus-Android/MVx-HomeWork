@@ -1,26 +1,38 @@
 package ru.otus.cryptomvisample
 
 import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import ru.otus.cryptomvisample.databinding.ActivityMainBinding
+import ru.otus.cryptomvisample.coins.feature.CoinListViewModelFactory
+import ru.otus.cryptomvisample.coins.feature.FavoriteCoinsViewModelFactory
+import ru.otus.cryptomvisample.coins.feature.di.DaggerCoinListComponent
+import ru.otus.cryptomvisample.ui.navigation.MainNavigation
+import ru.otus.cryptomvisample.ui.theme.CryptomvisampleTheme
+import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var coinListViewModelFactory: CoinListViewModelFactory
+    private lateinit var favoriteCoinsViewModelFactory: FavoriteCoinsViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        enableEdgeToEdge()
         
-        ViewCompat.setOnApplyWindowInsetsListener(binding.container) { view, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        // Create CoinListComponent and get factories
+        val appComponent = (applicationContext as CoinsSampleApp).appComponent
+        val coinListComponent = DaggerCoinListComponent.factory().create(appComponent)
+        coinListViewModelFactory = coinListComponent.viewModelFactory()
+        favoriteCoinsViewModelFactory = coinListComponent.favoriteCoinsViewModelFactory()
+        
+        setContent {
+            CryptomvisampleTheme {
+                MainNavigation(
+                    coinListViewModelFactory = coinListViewModelFactory,
+                    favoriteCoinsViewModelFactory = favoriteCoinsViewModelFactory
+                )
+            }
         }
     }
 }

@@ -4,31 +4,28 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptomvisample.coins.domain.ConsumeCoinsUseCase
-import ru.otus.cryptomvisample.coins.domain.SetFavouriteCoinUseCase
+import ru.otus.cryptomvisample.coins.domain.ConsumeFavoriteCoinsUseCase
+import ru.otus.cryptomvisample.coins.domain.CoinDomainMapper
 import ru.otus.cryptomvisample.coins.domain.UnsetFavouriteCoinUseCase
 import javax.inject.Inject
 
 @FeatureScope
-class CoinListViewModelFactory @Inject constructor(
-    private val consumeCoinsUseCase: ConsumeCoinsUseCase,
-    private val coinsStateFactory: CoinsStateFactory,
-    private val setFavouriteCoinUseCase: SetFavouriteCoinUseCase,
+class FavoriteCoinsViewModelFactory @Inject constructor(
+    private val consumeFavoriteCoinsUseCase: ConsumeFavoriteCoinsUseCase,
+    private val coinDomainMapper: CoinDomainMapper,
     private val unsetFavouriteCoinUseCase: UnsetFavouriteCoinUseCase,
-) :
-    ViewModelProvider.Factory {
+) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(
         modelClass: Class<T>,
         extras: CreationExtras,
     ): T {
         when {
-            modelClass.isAssignableFrom(CoinListViewModel::class.java) -> {
+            modelClass.isAssignableFrom(FavoriteCoinsViewModel::class.java) -> {
                 @Suppress("UNCHECKED_CAST")
-                return CoinListViewModel(
-                    consumeCoinsUseCase = consumeCoinsUseCase,
-                    coinsStateFactory = coinsStateFactory,
-                    setFavouriteCoinUseCase = setFavouriteCoinUseCase,
+                return FavoriteCoinsViewModel(
+                    consumeFavoriteCoinsUseCase = consumeFavoriteCoinsUseCase,
+                    coinDomainMapper = coinDomainMapper,
                     unsetFavouriteCoinUseCase = unsetFavouriteCoinUseCase,
                 ) as T
             }
