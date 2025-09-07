@@ -1,0 +1,4408 @@
+{
+  "coins": [
+    {
+      "id": "$pac",
+      "name": "PAC",
+      "ticker": "SPAC",
+      "price": 3.6896,
+      "change24h": 17.3,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/$pac",
+      "category": "cat10"
+    },
+    {
+      "id": "0xbtc",
+      "name": "0XBTC",
+      "ticker": "0XBTC",
+      "price": 1.068,
+      "change24h": 1.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/0xbtc",
+      "category": "cat10"
+    },
+    {
+      "id": "1inch",
+      "name": "1inch",
+      "ticker": "1INCH",
+      "price": 0.6586,
+      "change24h": -1.64,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/1inch",
+      "category": "cat10"
+    },
+    {
+      "id": "2give",
+      "name": "2GIVE",
+      "ticker": "2GIVE",
+      "price": 1.9752,
+      "change24h": 15.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/2give",
+      "category": "cat10"
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "ticker": "AAVE",
+      "price": 87.1707,
+      "change24h": 10.28,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aave",
+      "category": "cat2"
+    },
+    {
+      "id": "abt",
+      "name": "ABT",
+      "ticker": "ABT",
+      "price": 3.3283,
+      "change24h": -18.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/abt",
+      "category": "cat10"
+    },
+    {
+      "id": "act",
+      "name": "ACT",
+      "ticker": "ACT",
+      "price": 3.4925,
+      "change24h": -18.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/act",
+      "category": "cat10"
+    },
+    {
+      "id": "actn",
+      "name": "ACTN",
+      "ticker": "ACTN",
+      "price": 0.8146,
+      "change24h": 6.13,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/actn",
+      "category": "cat10"
+    },
+    {
+      "id": "ada",
+      "name": "Cardano",
+      "ticker": "ADA",
+      "price": 0.4832,
+      "change24h": 1.16,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ada",
+      "category": "cat0"
+    },
+    {
+      "id": "add",
+      "name": "ADD",
+      "ticker": "ADD",
+      "price": 0.6199,
+      "change24h": -1.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/add",
+      "category": "cat10"
+    },
+    {
+      "id": "adx",
+      "name": "ADX",
+      "ticker": "ADX",
+      "price": 4.3532,
+      "change24h": -16.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/adx",
+      "category": "cat10"
+    },
+    {
+      "id": "ae",
+      "name": "AE",
+      "ticker": "AE",
+      "price": 3.6438,
+      "change24h": -8.62,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ae",
+      "category": "cat10"
+    },
+    {
+      "id": "aeon",
+      "name": "AEON",
+      "ticker": "AEON",
+      "price": 0.7109,
+      "change24h": -19.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aeon",
+      "category": "cat10"
+    },
+    {
+      "id": "aeur",
+      "name": "AEUR",
+      "ticker": "AEUR",
+      "price": 0.2425,
+      "change24h": -5.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aeur",
+      "category": "cat3"
+    },
+    {
+      "id": "agi",
+      "name": "AGI",
+      "ticker": "AGI",
+      "price": 1.3158,
+      "change24h": 15.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/agi",
+      "category": "cat10"
+    },
+    {
+      "id": "agrs",
+      "name": "AGRS",
+      "ticker": "AGRS",
+      "price": 0.2044,
+      "change24h": -16.22,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/agrs",
+      "category": "cat10"
+    },
+    {
+      "id": "aion",
+      "name": "AION",
+      "ticker": "AION",
+      "price": 0.6285,
+      "change24h": 15.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aion",
+      "category": "cat10"
+    },
+    {
+      "id": "algo",
+      "name": "Algorand",
+      "ticker": "ALGO",
+      "price": 0.2868,
+      "change24h": 10.65,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/algo",
+      "category": "cat1"
+    },
+    {
+      "id": "amb",
+      "name": "AMB",
+      "ticker": "AMB",
+      "price": 1.2721,
+      "change24h": 2.43,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/amb",
+      "category": "cat10"
+    },
+    {
+      "id": "amp",
+      "name": "AMP",
+      "ticker": "AMP",
+      "price": 0.592,
+      "change24h": -11.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/amp",
+      "category": "cat10"
+    },
+    {
+      "id": "ampl",
+      "name": "AMPL",
+      "ticker": "AMPL",
+      "price": 0.786,
+      "change24h": 9.72,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ampl",
+      "category": "cat10"
+    },
+    {
+      "id": "ankr",
+      "name": "ANKR",
+      "ticker": "ANKR",
+      "price": 1.5871,
+      "change24h": 18.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ankr",
+      "category": "cat10"
+    },
+    {
+      "id": "ant",
+      "name": "ANT",
+      "ticker": "ANT",
+      "price": 3.3256,
+      "change24h": -17.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ant",
+      "category": "cat10"
+    },
+    {
+      "id": "ape",
+      "name": "ApeCoin",
+      "ticker": "APE",
+      "price": 3.5122,
+      "change24h": -4.93,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ape",
+      "category": "cat10"
+    },
+    {
+      "id": "apex",
+      "name": "APEX",
+      "ticker": "APEX",
+      "price": 0.9743,
+      "change24h": 7.98,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/apex",
+      "category": "cat10"
+    },
+    {
+      "id": "appc",
+      "name": "APPC",
+      "ticker": "APPC",
+      "price": 0.123,
+      "change24h": -5.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/appc",
+      "category": "cat10"
+    },
+    {
+      "id": "ardr",
+      "name": "ARDR",
+      "ticker": "ARDR",
+      "price": 1.7881,
+      "change24h": 17.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ardr",
+      "category": "cat6"
+    },
+    {
+      "id": "arg",
+      "name": "ARG",
+      "ticker": "ARG",
+      "price": 2.2004,
+      "change24h": -1.56,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/arg",
+      "category": "cat10"
+    },
+    {
+      "id": "ark",
+      "name": "ARK",
+      "ticker": "ARK",
+      "price": 2.0956,
+      "change24h": -14.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ark",
+      "category": "cat10"
+    },
+    {
+      "id": "arn",
+      "name": "ARN",
+      "ticker": "ARN",
+      "price": 3.9402,
+      "change24h": -18.67,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/arn",
+      "category": "cat10"
+    },
+    {
+      "id": "arnx",
+      "name": "ARNX",
+      "ticker": "ARNX",
+      "price": 0.4887,
+      "change24h": -3.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/arnx",
+      "category": "cat10"
+    },
+    {
+      "id": "ary",
+      "name": "ARY",
+      "ticker": "ARY",
+      "price": 0.0267,
+      "change24h": 18.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ary",
+      "category": "cat10"
+    },
+    {
+      "id": "ast",
+      "name": "AST",
+      "ticker": "AST",
+      "price": 2.5309,
+      "change24h": -18.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ast",
+      "category": "cat10"
+    },
+    {
+      "id": "atlas",
+      "name": "ATLAS",
+      "ticker": "ATLAS",
+      "price": 0.7047,
+      "change24h": -17.67,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/atlas",
+      "category": "cat7"
+    },
+    {
+      "id": "atm",
+      "name": "ATM",
+      "ticker": "ATM",
+      "price": 2.2414,
+      "change24h": -10.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/atm",
+      "category": "cat10"
+    },
+    {
+      "id": "atom",
+      "name": "Cosmos",
+      "ticker": "ATOM",
+      "price": 7.5786,
+      "change24h": 19.8,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/atom",
+      "category": "cat1"
+    },
+    {
+      "id": "audr",
+      "name": "AUDR",
+      "ticker": "AUDR",
+      "price": 0.3085,
+      "change24h": -12.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/audr",
+      "category": "cat10"
+    },
+    {
+      "id": "aury",
+      "name": "AURY",
+      "ticker": "AURY",
+      "price": 0.9684,
+      "change24h": 2.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aury",
+      "category": "cat7"
+    },
+    {
+      "id": "auto",
+      "name": "AUTO",
+      "ticker": "AUTO",
+      "price": 1.9508,
+      "change24h": -13.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/auto",
+      "category": "cat10"
+    },
+    {
+      "id": "avax",
+      "name": "Avalanche",
+      "ticker": "AVAX",
+      "price": 42.9181,
+      "change24h": -18.1,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/avax",
+      "category": "cat1"
+    },
+    {
+      "id": "aywa",
+      "name": "AYWA",
+      "ticker": "AYWA",
+      "price": 1.3486,
+      "change24h": 0.41,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/aywa",
+      "category": "cat10"
+    },
+    {
+      "id": "bab",
+      "name": "BAB",
+      "ticker": "BAB",
+      "price": 2.8966,
+      "change24h": 19.09,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bab",
+      "category": "cat10"
+    },
+    {
+      "id": "bal",
+      "name": "Balancer",
+      "ticker": "BAL",
+      "price": 3.4734,
+      "change24h": 5.42,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bal",
+      "category": "cat2"
+    },
+    {
+      "id": "band",
+      "name": "Band Protocol",
+      "ticker": "BAND",
+      "price": 1.4044,
+      "change24h": 17.05,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/band",
+      "category": "cat2"
+    },
+    {
+      "id": "bat",
+      "name": "Basic Attention Token",
+      "ticker": "BAT",
+      "price": 4.659,
+      "change24h": 11.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bat",
+      "category": "cat2"
+    },
+    {
+      "id": "bay",
+      "name": "BAY",
+      "ticker": "BAY",
+      "price": 2.9919,
+      "change24h": -11.36,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bay",
+      "category": "cat10"
+    },
+    {
+      "id": "bcbc",
+      "name": "BCBC",
+      "ticker": "BCBC",
+      "price": 1.2292,
+      "change24h": -13.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcbc",
+      "category": "cat10"
+    },
+    {
+      "id": "bcc",
+      "name": "BCC",
+      "ticker": "BCC",
+      "price": 3.8596,
+      "change24h": -10.06,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcc",
+      "category": "cat10"
+    },
+    {
+      "id": "bcd",
+      "name": "BCD",
+      "ticker": "BCD",
+      "price": 3.136,
+      "change24h": 0.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcd",
+      "category": "cat10"
+    },
+    {
+      "id": "bch",
+      "name": "Bitcoin Cash",
+      "ticker": "BCH",
+      "price": 4.1622,
+      "change24h": 10.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bch",
+      "category": "cat1"
+    },
+    {
+      "id": "bcio",
+      "name": "BCIO",
+      "ticker": "BCIO",
+      "price": 0.3993,
+      "change24h": 3.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcio",
+      "category": "cat10"
+    },
+    {
+      "id": "bcn",
+      "name": "BCN",
+      "ticker": "BCN",
+      "price": 1.4516,
+      "change24h": -18.84,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcn",
+      "category": "cat10"
+    },
+    {
+      "id": "bco",
+      "name": "BCO",
+      "ticker": "BCO",
+      "price": 0.7782,
+      "change24h": 3.02,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bco",
+      "category": "cat10"
+    },
+    {
+      "id": "bcpt",
+      "name": "BCPT",
+      "ticker": "BCPT",
+      "price": 0.7737,
+      "change24h": -3.2,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bcpt",
+      "category": "cat10"
+    },
+    {
+      "id": "bdl",
+      "name": "BDL",
+      "ticker": "BDL",
+      "price": 4.0396,
+      "change24h": -13.93,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bdl",
+      "category": "cat10"
+    },
+    {
+      "id": "beam",
+      "name": "BEAM",
+      "ticker": "BEAM",
+      "price": 0.9461,
+      "change24h": -6.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/beam",
+      "category": "cat10"
+    },
+    {
+      "id": "bela",
+      "name": "BELA",
+      "ticker": "BELA",
+      "price": 0.1987,
+      "change24h": 8.93,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bela",
+      "category": "cat10"
+    },
+    {
+      "id": "bix",
+      "name": "BIX",
+      "ticker": "BIX",
+      "price": 0.4141,
+      "change24h": 13.22,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bix",
+      "category": "cat10"
+    },
+    {
+      "id": "blcn",
+      "name": "BLCN",
+      "ticker": "BLCN",
+      "price": 0.2179,
+      "change24h": 12.76,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/blcn",
+      "category": "cat10"
+    },
+    {
+      "id": "blk",
+      "name": "BLK",
+      "ticker": "BLK",
+      "price": 4.132,
+      "change24h": -11.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/blk",
+      "category": "cat10"
+    },
+    {
+      "id": "block",
+      "name": "BLOCK",
+      "ticker": "BLOCK",
+      "price": 0.1739,
+      "change24h": -14.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/block",
+      "category": "cat10"
+    },
+    {
+      "id": "blz",
+      "name": "BLZ",
+      "ticker": "BLZ",
+      "price": 2.5343,
+      "change24h": -0.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/blz",
+      "category": "cat10"
+    },
+    {
+      "id": "bnb",
+      "name": "BNB",
+      "ticker": "BNB",
+      "price": 640.2814,
+      "change24h": -7.65,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bnb",
+      "category": "cat4"
+    },
+    {
+      "id": "bnt",
+      "name": "BNT",
+      "ticker": "BNT",
+      "price": 1.0268,
+      "change24h": -1.1,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bnt",
+      "category": "cat10"
+    },
+    {
+      "id": "bnty",
+      "name": "BNTY",
+      "ticker": "BNTY",
+      "price": 1.628,
+      "change24h": 19.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bnty",
+      "category": "cat10"
+    },
+    {
+      "id": "booty",
+      "name": "BOOTY",
+      "ticker": "BOOTY",
+      "price": 0.8363,
+      "change24h": -15.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/booty",
+      "category": "cat10"
+    },
+    {
+      "id": "bos",
+      "name": "BOS",
+      "ticker": "BOS",
+      "price": 4.1171,
+      "change24h": 18.29,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bos",
+      "category": "cat10"
+    },
+    {
+      "id": "bpt",
+      "name": "BPT",
+      "ticker": "BPT",
+      "price": 3.2821,
+      "change24h": 4.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bpt",
+      "category": "cat10"
+    },
+    {
+      "id": "bq",
+      "name": "BQ",
+      "ticker": "BQ",
+      "price": 1.7268,
+      "change24h": -12.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bq",
+      "category": "cat10"
+    },
+    {
+      "id": "brd",
+      "name": "BRD",
+      "ticker": "BRD",
+      "price": 1.6878,
+      "change24h": 10.47,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/brd",
+      "category": "cat10"
+    },
+    {
+      "id": "bsd",
+      "name": "BSD",
+      "ticker": "BSD",
+      "price": 0.8309,
+      "change24h": 17.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bsd",
+      "category": "cat10"
+    },
+    {
+      "id": "bsv",
+      "name": "Bitcoin SV",
+      "ticker": "BSV",
+      "price": 0.128,
+      "change24h": -9.64,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bsv",
+      "category": "cat1"
+    },
+    {
+      "id": "btc",
+      "name": "Bitcoin",
+      "ticker": "BTC",
+      "price": 67302.0429,
+      "change24h": 17.21,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btc",
+      "category": "cat0"
+    },
+    {
+      "id": "btcd",
+      "name": "BTCD",
+      "ticker": "BTCD",
+      "price": 1.0297,
+      "change24h": -11.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btcd",
+      "category": "cat10"
+    },
+    {
+      "id": "btch",
+      "name": "BTCH",
+      "ticker": "BTCH",
+      "price": 0.9528,
+      "change24h": 6.74,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btch",
+      "category": "cat10"
+    },
+    {
+      "id": "btcp",
+      "name": "BTCP",
+      "ticker": "BTCP",
+      "price": 1.8361,
+      "change24h": 19.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btcp",
+      "category": "cat10"
+    },
+    {
+      "id": "btcz",
+      "name": "BTCZ",
+      "ticker": "BTCZ",
+      "price": 0.4624,
+      "change24h": 4.39,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btcz",
+      "category": "cat10"
+    },
+    {
+      "id": "btdx",
+      "name": "BTDX",
+      "ticker": "BTDX",
+      "price": 1.1724,
+      "change24h": -14.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btdx",
+      "category": "cat10"
+    },
+    {
+      "id": "btg",
+      "name": "Bitcoin Gold",
+      "ticker": "BTG",
+      "price": 1.0859,
+      "change24h": -15.33,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btg",
+      "category": "cat1"
+    },
+    {
+      "id": "btm",
+      "name": "BTM",
+      "ticker": "BTM",
+      "price": 4.6304,
+      "change24h": 2.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btm",
+      "category": "cat10"
+    },
+    {
+      "id": "bts",
+      "name": "BTS",
+      "ticker": "BTS",
+      "price": 3.7056,
+      "change24h": 0.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bts",
+      "category": "cat10"
+    },
+    {
+      "id": "btt",
+      "name": "BTT",
+      "ticker": "BTT",
+      "price": 2.0023,
+      "change24h": 18.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btt",
+      "category": "cat10"
+    },
+    {
+      "id": "btx",
+      "name": "BTX",
+      "ticker": "BTX",
+      "price": 3.3665,
+      "change24h": -3.01,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/btx",
+      "category": "cat10"
+    },
+    {
+      "id": "burst",
+      "name": "BURST",
+      "ticker": "BURST",
+      "price": 0.1434,
+      "change24h": -15.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/burst",
+      "category": "cat10"
+    },
+    {
+      "id": "bze",
+      "name": "BZE",
+      "ticker": "BZE",
+      "price": 1.7943,
+      "change24h": -5.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/bze",
+      "category": "cat10"
+    },
+    {
+      "id": "call",
+      "name": "CALL",
+      "ticker": "CALL",
+      "price": 0.4386,
+      "change24h": -18.66,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/call",
+      "category": "cat10"
+    },
+    {
+      "id": "cc",
+      "name": "CC",
+      "ticker": "CC",
+      "price": 4.6,
+      "change24h": -9.61,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cc",
+      "category": "cat10"
+    },
+    {
+      "id": "cdn",
+      "name": "CDN",
+      "ticker": "CDN",
+      "price": 4.1334,
+      "change24h": 14.9,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cdn",
+      "category": "cat10"
+    },
+    {
+      "id": "cdt",
+      "name": "CDT",
+      "ticker": "CDT",
+      "price": 2.0218,
+      "change24h": 1.37,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cdt",
+      "category": "cat10"
+    },
+    {
+      "id": "cenz",
+      "name": "CENZ",
+      "ticker": "CENZ",
+      "price": 0.2983,
+      "change24h": -11.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cenz",
+      "category": "cat10"
+    },
+    {
+      "id": "chain",
+      "name": "CHAIN",
+      "ticker": "CHAIN",
+      "price": 0.7,
+      "change24h": -6.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/chain",
+      "category": "cat10"
+    },
+    {
+      "id": "chat",
+      "name": "CHAT",
+      "ticker": "CHAT",
+      "price": 1.5773,
+      "change24h": 10.89,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/chat",
+      "category": "cat10"
+    },
+    {
+      "id": "chips",
+      "name": "CHIPS",
+      "ticker": "CHIPS",
+      "price": 1.289,
+      "change24h": 11.69,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/chips",
+      "category": "cat10"
+    },
+    {
+      "id": "chsb",
+      "name": "CHSB",
+      "ticker": "CHSB",
+      "price": 1.6397,
+      "change24h": -18.85,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/chsb",
+      "category": "cat10"
+    },
+    {
+      "id": "chz",
+      "name": "Chiliz",
+      "ticker": "CHZ",
+      "price": 4.9235,
+      "change24h": -19.61,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/chz",
+      "category": "cat7"
+    },
+    {
+      "id": "cix",
+      "name": "CIX",
+      "ticker": "CIX",
+      "price": 3.787,
+      "change24h": -8.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cix",
+      "category": "cat10"
+    },
+    {
+      "id": "clam",
+      "name": "CLAM",
+      "ticker": "CLAM",
+      "price": 0.2256,
+      "change24h": 2.72,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/clam",
+      "category": "cat10"
+    },
+    {
+      "id": "cloak",
+      "name": "CLOAK",
+      "ticker": "CLOAK",
+      "price": 1.0678,
+      "change24h": -7.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cloak",
+      "category": "cat9"
+    },
+    {
+      "id": "cmm",
+      "name": "CMM",
+      "ticker": "CMM",
+      "price": 4.5141,
+      "change24h": 11.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cmm",
+      "category": "cat10"
+    },
+    {
+      "id": "cmt",
+      "name": "CMT",
+      "ticker": "CMT",
+      "price": 1.6631,
+      "change24h": 4.02,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cmt",
+      "category": "cat10"
+    },
+    {
+      "id": "cnd",
+      "name": "CND",
+      "ticker": "CND",
+      "price": 3.0134,
+      "change24h": -14.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cnd",
+      "category": "cat10"
+    },
+    {
+      "id": "cnx",
+      "name": "CNX",
+      "ticker": "CNX",
+      "price": 0.354,
+      "change24h": 15.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cnx",
+      "category": "cat10"
+    },
+    {
+      "id": "cny",
+      "name": "CNY",
+      "ticker": "CNY",
+      "price": 4.0111,
+      "change24h": -16.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cny",
+      "category": "cat3"
+    },
+    {
+      "id": "cob",
+      "name": "COB",
+      "ticker": "COB",
+      "price": 0.3685,
+      "change24h": -18.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cob",
+      "category": "cat10"
+    },
+    {
+      "id": "colx",
+      "name": "COLX",
+      "ticker": "COLX",
+      "price": 0.8148,
+      "change24h": 10.79,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/colx",
+      "category": "cat10"
+    },
+    {
+      "id": "comp",
+      "name": "Compound",
+      "ticker": "COMP",
+      "price": 58.8986,
+      "change24h": 5.33,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/comp",
+      "category": "cat2"
+    },
+    {
+      "id": "coqui",
+      "name": "COQUI",
+      "ticker": "COQUI",
+      "price": 0.7442,
+      "change24h": 2.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/coqui",
+      "category": "cat10"
+    },
+    {
+      "id": "cred",
+      "name": "CRED",
+      "ticker": "CRED",
+      "price": 0.6051,
+      "change24h": -13.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cred",
+      "category": "cat10"
+    },
+    {
+      "id": "crpt",
+      "name": "CRPT",
+      "ticker": "CRPT",
+      "price": 1.7408,
+      "change24h": 6.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/crpt",
+      "category": "cat10"
+    },
+    {
+      "id": "crv",
+      "name": "Curve DAO Token",
+      "ticker": "CRV",
+      "price": 0.5077,
+      "change24h": -12.76,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/crv",
+      "category": "cat2"
+    },
+    {
+      "id": "crw",
+      "name": "CRW",
+      "ticker": "CRW",
+      "price": 1.6259,
+      "change24h": -11.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/crw",
+      "category": "cat10"
+    },
+    {
+      "id": "cs",
+      "name": "CS",
+      "ticker": "CS",
+      "price": 4.1237,
+      "change24h": -14.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cs",
+      "category": "cat10"
+    },
+    {
+      "id": "ctr",
+      "name": "CTR",
+      "ticker": "CTR",
+      "price": 1.5722,
+      "change24h": -10.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ctr",
+      "category": "cat10"
+    },
+    {
+      "id": "ctxc",
+      "name": "CTXC",
+      "ticker": "CTXC",
+      "price": 1.43,
+      "change24h": 6.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ctxc",
+      "category": "cat10"
+    },
+    {
+      "id": "cvc",
+      "name": "CVC",
+      "ticker": "CVC",
+      "price": 1.3583,
+      "change24h": -16.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/cvc",
+      "category": "cat10"
+    },
+    {
+      "id": "d",
+      "name": "D",
+      "ticker": "D",
+      "price": 1.2368,
+      "change24h": -12.52,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/d",
+      "category": "cat10"
+    },
+    {
+      "id": "dai",
+      "name": "Dai",
+      "ticker": "DAI",
+      "price": 0.3853,
+      "change24h": 8.98,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dai",
+      "category": "cat2"
+    },
+    {
+      "id": "dash",
+      "name": "DASH",
+      "ticker": "DASH",
+      "price": 0.2217,
+      "change24h": 2.69,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dash",
+      "category": "cat10"
+    },
+    {
+      "id": "dat",
+      "name": "DAT",
+      "ticker": "DAT",
+      "price": 3.132,
+      "change24h": 1.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dat",
+      "category": "cat5"
+    },
+    {
+      "id": "data",
+      "name": "DATA",
+      "ticker": "DATA",
+      "price": 0.908,
+      "change24h": 18.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/data",
+      "category": "cat5"
+    },
+    {
+      "id": "dbc",
+      "name": "DBC",
+      "ticker": "DBC",
+      "price": 1.5756,
+      "change24h": -19.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dbc",
+      "category": "cat10"
+    },
+    {
+      "id": "dcn",
+      "name": "DCN",
+      "ticker": "DCN",
+      "price": 0.6927,
+      "change24h": -9.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dcn",
+      "category": "cat10"
+    },
+    {
+      "id": "dcr",
+      "name": "DCR",
+      "ticker": "DCR",
+      "price": 2.2788,
+      "change24h": 14.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dcr",
+      "category": "cat10"
+    },
+    {
+      "id": "deez",
+      "name": "DEEZ",
+      "ticker": "DEEZ",
+      "price": 1.8117,
+      "change24h": -18.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/deez",
+      "category": "cat10"
+    },
+    {
+      "id": "dent",
+      "name": "DENT",
+      "ticker": "DENT",
+      "price": 1.9325,
+      "change24h": -19.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dent",
+      "category": "cat10"
+    },
+    {
+      "id": "dew",
+      "name": "DEW",
+      "ticker": "DEW",
+      "price": 4.9653,
+      "change24h": -4.84,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dew",
+      "category": "cat10"
+    },
+    {
+      "id": "dgb",
+      "name": "DGB",
+      "ticker": "DGB",
+      "price": 4.9001,
+      "change24h": 18.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dgb",
+      "category": "cat10"
+    },
+    {
+      "id": "dgd",
+      "name": "DGD",
+      "ticker": "DGD",
+      "price": 4.4797,
+      "change24h": 8.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dgd",
+      "category": "cat10"
+    },
+    {
+      "id": "dlt",
+      "name": "DLT",
+      "ticker": "DLT",
+      "price": 1.0961,
+      "change24h": 11.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dlt",
+      "category": "cat10"
+    },
+    {
+      "id": "dnt",
+      "name": "DNT",
+      "ticker": "DNT",
+      "price": 0.7879,
+      "change24h": 14.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dnt",
+      "category": "cat10"
+    },
+    {
+      "id": "dock",
+      "name": "DOCK",
+      "ticker": "DOCK",
+      "price": 0.2153,
+      "change24h": 11.72,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dock",
+      "category": "cat10"
+    },
+    {
+      "id": "doge",
+      "name": "Dogecoin",
+      "ticker": "DOGE",
+      "price": 0.1308,
+      "change24h": -6.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/doge",
+      "category": "cat10"
+    },
+    {
+      "id": "dot",
+      "name": "Polkadot",
+      "ticker": "DOT",
+      "price": 9.6606,
+      "change24h": 13.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dot",
+      "category": "cat0"
+    },
+    {
+      "id": "drgn",
+      "name": "DRGN",
+      "ticker": "DRGN",
+      "price": 1.3841,
+      "change24h": -7.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/drgn",
+      "category": "cat10"
+    },
+    {
+      "id": "drop",
+      "name": "DROP",
+      "ticker": "DROP",
+      "price": 0.4284,
+      "change24h": 16.3,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/drop",
+      "category": "cat10"
+    },
+    {
+      "id": "dta",
+      "name": "DTA",
+      "ticker": "DTA",
+      "price": 4.1915,
+      "change24h": 11.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dta",
+      "category": "cat5"
+    },
+    {
+      "id": "dth",
+      "name": "DTH",
+      "ticker": "DTH",
+      "price": 1.9881,
+      "change24h": -5.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dth",
+      "category": "cat10"
+    },
+    {
+      "id": "dtr",
+      "name": "DTR",
+      "ticker": "DTR",
+      "price": 1.3868,
+      "change24h": 16.9,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/dtr",
+      "category": "cat10"
+    },
+    {
+      "id": "ebst",
+      "name": "EBST",
+      "ticker": "EBST",
+      "price": 0.0611,
+      "change24h": 6.7,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ebst",
+      "category": "cat10"
+    },
+    {
+      "id": "eca",
+      "name": "ECA",
+      "ticker": "ECA",
+      "price": 0.3047,
+      "change24h": 14.27,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eca",
+      "category": "cat10"
+    },
+    {
+      "id": "edg",
+      "name": "EDG",
+      "ticker": "EDG",
+      "price": 3.8825,
+      "change24h": -9.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/edg",
+      "category": "cat10"
+    },
+    {
+      "id": "edo",
+      "name": "EDO",
+      "ticker": "EDO",
+      "price": 2.9532,
+      "change24h": 5.36,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/edo",
+      "category": "cat10"
+    },
+    {
+      "id": "edoge",
+      "name": "EDOGE",
+      "ticker": "EDOGE",
+      "price": 0.3809,
+      "change24h": 12.1,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/edoge",
+      "category": "cat10"
+    },
+    {
+      "id": "ela",
+      "name": "ELA",
+      "ticker": "ELA",
+      "price": 1.1597,
+      "change24h": -10.92,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ela",
+      "category": "cat10"
+    },
+    {
+      "id": "elec",
+      "name": "ELEC",
+      "ticker": "ELEC",
+      "price": 0.9608,
+      "change24h": -11.41,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/elec",
+      "category": "cat10"
+    },
+    {
+      "id": "elf",
+      "name": "ELF",
+      "ticker": "ELF",
+      "price": 4.337,
+      "change24h": 13.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/elf",
+      "category": "cat10"
+    },
+    {
+      "id": "elix",
+      "name": "ELIX",
+      "ticker": "ELIX",
+      "price": 1.6424,
+      "change24h": 17.65,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/elix",
+      "category": "cat10"
+    },
+    {
+      "id": "ella",
+      "name": "ELLA",
+      "ticker": "ELLA",
+      "price": 1.793,
+      "change24h": 12.37,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ella",
+      "category": "cat10"
+    },
+    {
+      "id": "emb",
+      "name": "EMB",
+      "ticker": "EMB",
+      "price": 1.7945,
+      "change24h": 2.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/emb",
+      "category": "cat10"
+    },
+    {
+      "id": "emc",
+      "name": "EMC",
+      "ticker": "EMC",
+      "price": 3.8959,
+      "change24h": 11.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/emc",
+      "category": "cat10"
+    },
+    {
+      "id": "emc2",
+      "name": "EMC2",
+      "ticker": "EMC2",
+      "price": 0.0265,
+      "change24h": 2.86,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/emc2",
+      "category": "cat10"
+    },
+    {
+      "id": "eng",
+      "name": "ENG",
+      "ticker": "ENG",
+      "price": 0.9387,
+      "change24h": 11.01,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eng",
+      "category": "cat10"
+    },
+    {
+      "id": "enj",
+      "name": "Enjin Coin",
+      "ticker": "ENJ",
+      "price": 4.3732,
+      "change24h": 4.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/enj",
+      "category": "cat7"
+    },
+    {
+      "id": "entrp",
+      "name": "ENTRP",
+      "ticker": "ENTRP",
+      "price": 0.5746,
+      "change24h": -19.64,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/entrp",
+      "category": "cat10"
+    },
+    {
+      "id": "eon",
+      "name": "EON",
+      "ticker": "EON",
+      "price": 0.7005,
+      "change24h": 16.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eon",
+      "category": "cat10"
+    },
+    {
+      "id": "eop",
+      "name": "EOP",
+      "ticker": "EOP",
+      "price": 4.3509,
+      "change24h": -16.37,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eop",
+      "category": "cat10"
+    },
+    {
+      "id": "eos",
+      "name": "EOS",
+      "ticker": "EOS",
+      "price": 0.7605,
+      "change24h": -11.27,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eos",
+      "category": "cat0"
+    },
+    {
+      "id": "eqli",
+      "name": "EQLI",
+      "ticker": "EQLI",
+      "price": 1.5566,
+      "change24h": 14.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eqli",
+      "category": "cat10"
+    },
+    {
+      "id": "equa",
+      "name": "EQUA",
+      "ticker": "EQUA",
+      "price": 0.122,
+      "change24h": -12.07,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/equa",
+      "category": "cat10"
+    },
+    {
+      "id": "etc",
+      "name": "Ethereum Classic",
+      "ticker": "ETC",
+      "price": 33.7659,
+      "change24h": -19.05,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/etc",
+      "category": "cat1"
+    },
+    {
+      "id": "eth",
+      "name": "Ethereum",
+      "ticker": "ETH",
+      "price": 3263.4509,
+      "change24h": 10.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eth",
+      "category": "cat0"
+    },
+    {
+      "id": "ethos",
+      "name": "ETHOS",
+      "ticker": "ETHOS",
+      "price": 1.5216,
+      "change24h": -19.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ethos",
+      "category": "cat10"
+    },
+    {
+      "id": "etn",
+      "name": "ETN",
+      "ticker": "ETN",
+      "price": 1.3718,
+      "change24h": 18.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/etn",
+      "category": "cat10"
+    },
+    {
+      "id": "etp",
+      "name": "ETP",
+      "ticker": "ETP",
+      "price": 4.2962,
+      "change24h": -12.22,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/etp",
+      "category": "cat10"
+    },
+    {
+      "id": "eur",
+      "name": "EUR",
+      "ticker": "EUR",
+      "price": 2.3593,
+      "change24h": 1.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/eur",
+      "category": "cat3"
+    },
+    {
+      "id": "evx",
+      "name": "EVX",
+      "ticker": "EVX",
+      "price": 2.8128,
+      "change24h": 12.39,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/evx",
+      "category": "cat10"
+    },
+    {
+      "id": "exmo",
+      "name": "EXMO",
+      "ticker": "EXMO",
+      "price": 1.3589,
+      "change24h": 0.97,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/exmo",
+      "category": "cat4"
+    },
+    {
+      "id": "exp",
+      "name": "EXP",
+      "ticker": "EXP",
+      "price": 3.229,
+      "change24h": 9.37,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/exp",
+      "category": "cat10"
+    },
+    {
+      "id": "fair",
+      "name": "FAIR",
+      "ticker": "FAIR",
+      "price": 1.4019,
+      "change24h": 16.81,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fair",
+      "category": "cat10"
+    },
+    {
+      "id": "fct",
+      "name": "FCT",
+      "ticker": "FCT",
+      "price": 1.9316,
+      "change24h": 12.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fct",
+      "category": "cat10"
+    },
+    {
+      "id": "fida",
+      "name": "FIDA",
+      "ticker": "FIDA",
+      "price": 1.2112,
+      "change24h": -16.84,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fida",
+      "category": "cat4"
+    },
+    {
+      "id": "fil",
+      "name": "Filecoin",
+      "ticker": "FIL",
+      "price": 7.0579,
+      "change24h": -3.47,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fil",
+      "category": "cat6"
+    },
+    {
+      "id": "fjc",
+      "name": "FJC",
+      "ticker": "FJC",
+      "price": 1.6626,
+      "change24h": 3.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fjc",
+      "category": "cat10"
+    },
+    {
+      "id": "fldc",
+      "name": "FLDC",
+      "ticker": "FLDC",
+      "price": 0.4538,
+      "change24h": 10.92,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fldc",
+      "category": "cat10"
+    },
+    {
+      "id": "flo",
+      "name": "FLO",
+      "ticker": "FLO",
+      "price": 0.357,
+      "change24h": 4.7,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/flo",
+      "category": "cat6"
+    },
+    {
+      "id": "flux",
+      "name": "FLUX",
+      "ticker": "FLUX",
+      "price": 0.2245,
+      "change24h": 1.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/flux",
+      "category": "cat6"
+    },
+    {
+      "id": "fsn",
+      "name": "FSN",
+      "ticker": "FSN",
+      "price": 1.2281,
+      "change24h": 13.01,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fsn",
+      "category": "cat6"
+    },
+    {
+      "id": "ftc",
+      "name": "FTC",
+      "ticker": "FTC",
+      "price": 0.8495,
+      "change24h": -14.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ftc",
+      "category": "cat10"
+    },
+    {
+      "id": "fuel",
+      "name": "FUEL",
+      "ticker": "FUEL",
+      "price": 1.3064,
+      "change24h": 7.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fuel",
+      "category": "cat10"
+    },
+    {
+      "id": "fun",
+      "name": "FUN",
+      "ticker": "FUN",
+      "price": 3.7474,
+      "change24h": 7.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/fun",
+      "category": "cat10"
+    },
+    {
+      "id": "game",
+      "name": "GAME",
+      "ticker": "GAME",
+      "price": 1.1714,
+      "change24h": -10.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/game",
+      "category": "cat7"
+    },
+    {
+      "id": "gas",
+      "name": "GAS",
+      "ticker": "GAS",
+      "price": 3.2587,
+      "change24h": 3.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gas",
+      "category": "cat10"
+    },
+    {
+      "id": "gbp",
+      "name": "GBP",
+      "ticker": "GBP",
+      "price": 4.3305,
+      "change24h": 8.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gbp",
+      "category": "cat3"
+    },
+    {
+      "id": "gbx",
+      "name": "GBX",
+      "ticker": "GBX",
+      "price": 1.46,
+      "change24h": -10.2,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gbx",
+      "category": "cat4"
+    },
+    {
+      "id": "gbyte",
+      "name": "GBYTE",
+      "ticker": "GBYTE",
+      "price": 1.3461,
+      "change24h": -1.67,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gbyte",
+      "category": "cat5"
+    },
+    {
+      "id": "generic",
+      "name": "GENERIC",
+      "ticker": "GENERIC",
+      "price": 0.9119,
+      "change24h": 19.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/generic",
+      "category": "cat10"
+    },
+    {
+      "id": "gin",
+      "name": "GIN",
+      "ticker": "GIN",
+      "price": 1.8543,
+      "change24h": 15.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gin",
+      "category": "cat10"
+    },
+    {
+      "id": "glxt",
+      "name": "GLXT",
+      "ticker": "GLXT",
+      "price": 1.7058,
+      "change24h": 10.12,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/glxt",
+      "category": "cat10"
+    },
+    {
+      "id": "gmr",
+      "name": "GMR",
+      "ticker": "GMR",
+      "price": 1.8383,
+      "change24h": -1.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gmr",
+      "category": "cat7"
+    },
+    {
+      "id": "gmt",
+      "name": "GMT",
+      "ticker": "GMT",
+      "price": 2.4486,
+      "change24h": 9.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gmt",
+      "category": "cat7"
+    },
+    {
+      "id": "gno",
+      "name": "GNO",
+      "ticker": "GNO",
+      "price": 1.1751,
+      "change24h": -16.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gno",
+      "category": "cat5"
+    },
+    {
+      "id": "gnt",
+      "name": "GNT",
+      "ticker": "GNT",
+      "price": 1.435,
+      "change24h": -12.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gnt",
+      "category": "cat10"
+    },
+    {
+      "id": "gold",
+      "name": "GOLD",
+      "ticker": "GOLD",
+      "price": 0.7986,
+      "change24h": 4.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gold",
+      "category": "cat3"
+    },
+    {
+      "id": "grc",
+      "name": "GRC",
+      "ticker": "GRC",
+      "price": 2.3961,
+      "change24h": -0.3,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/grc",
+      "category": "cat9"
+    },
+    {
+      "id": "grin",
+      "name": "Grin",
+      "ticker": "GRIN",
+      "price": 0.9522,
+      "change24h": 12.67,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/grin",
+      "category": "cat1"
+    },
+    {
+      "id": "grs",
+      "name": "GRS",
+      "ticker": "GRS",
+      "price": 2.8888,
+      "change24h": -2.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/grs",
+      "category": "cat10"
+    },
+    {
+      "id": "grt",
+      "name": "The Graph",
+      "ticker": "GRT",
+      "price": 4.8513,
+      "change24h": 8.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/grt",
+      "category": "cat5"
+    },
+    {
+      "id": "gsc",
+      "name": "GSC",
+      "ticker": "GSC",
+      "price": 4.0547,
+      "change24h": -17.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gsc",
+      "category": "cat10"
+    },
+    {
+      "id": "gto",
+      "name": "GTO",
+      "ticker": "GTO",
+      "price": 3.0882,
+      "change24h": 1.37,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gto",
+      "category": "cat10"
+    },
+    {
+      "id": "gup",
+      "name": "GUP",
+      "ticker": "GUP",
+      "price": 2.898,
+      "change24h": -7.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gup",
+      "category": "cat10"
+    },
+    {
+      "id": "gusd",
+      "name": "Gemini Dollar",
+      "ticker": "GUSD",
+      "price": 1.6818,
+      "change24h": -3.74,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gusd",
+      "category": "cat2"
+    },
+    {
+      "id": "gvt",
+      "name": "GVT",
+      "ticker": "GVT",
+      "price": 4.3443,
+      "change24h": -7.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gvt",
+      "category": "cat10"
+    },
+    {
+      "id": "gxs",
+      "name": "GXS",
+      "ticker": "GXS",
+      "price": 4.0835,
+      "change24h": 19.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gxs",
+      "category": "cat10"
+    },
+    {
+      "id": "gzr",
+      "name": "GZR",
+      "ticker": "GZR",
+      "price": 1.8082,
+      "change24h": 17.79,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/gzr",
+      "category": "cat10"
+    },
+    {
+      "id": "hight",
+      "name": "HIGHT",
+      "ticker": "HIGHT",
+      "price": 1.9317,
+      "change24h": 18.78,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hight",
+      "category": "cat10"
+    },
+    {
+      "id": "hns",
+      "name": "HNS",
+      "ticker": "HNS",
+      "price": 0.2532,
+      "change24h": -1.68,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hns",
+      "category": "cat10"
+    },
+    {
+      "id": "hodl",
+      "name": "HODL",
+      "ticker": "HODL",
+      "price": 1.9438,
+      "change24h": -12.53,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hodl",
+      "category": "cat10"
+    },
+    {
+      "id": "hot",
+      "name": "HOT",
+      "ticker": "HOT",
+      "price": 1.6747,
+      "change24h": -0.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hot",
+      "category": "cat10"
+    },
+    {
+      "id": "hpb",
+      "name": "HPB",
+      "ticker": "HPB",
+      "price": 3.8095,
+      "change24h": -6.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hpb",
+      "category": "cat10"
+    },
+    {
+      "id": "hsr",
+      "name": "HSR",
+      "ticker": "HSR",
+      "price": 0.2392,
+      "change24h": -12.61,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hsr",
+      "category": "cat10"
+    },
+    {
+      "id": "ht",
+      "name": "Huobi Token",
+      "ticker": "HT",
+      "price": 0.4151,
+      "change24h": 5.33,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ht",
+      "category": "cat4"
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "ticker": "HTML",
+      "price": 0.6509,
+      "change24h": 7.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/html",
+      "category": "cat10"
+    },
+    {
+      "id": "huc",
+      "name": "HUC",
+      "ticker": "HUC",
+      "price": 1.9269,
+      "change24h": 9.47,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/huc",
+      "category": "cat10"
+    },
+    {
+      "id": "husd",
+      "name": "HUSD",
+      "ticker": "HUSD",
+      "price": 1.2493,
+      "change24h": -7.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/husd",
+      "category": "cat3"
+    },
+    {
+      "id": "hush",
+      "name": "HUSH",
+      "ticker": "HUSH",
+      "price": 1.1093,
+      "change24h": -16.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/hush",
+      "category": "cat9"
+    },
+    {
+      "id": "icn",
+      "name": "ICONOMI",
+      "ticker": "ICN",
+      "price": 3.8801,
+      "change24h": 13.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/icn",
+      "category": "cat1"
+    },
+    {
+      "id": "icp",
+      "name": "Internet Computer",
+      "ticker": "ICP",
+      "price": 7.1539,
+      "change24h": 17.76,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/icp",
+      "category": "cat1"
+    },
+    {
+      "id": "icx",
+      "name": "ICON",
+      "ticker": "ICX",
+      "price": 1.1096,
+      "change24h": 0.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/icx",
+      "category": "cat1"
+    },
+    {
+      "id": "ignis",
+      "name": "IGNIS",
+      "ticker": "IGNIS",
+      "price": 0.4807,
+      "change24h": -16.73,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ignis",
+      "category": "cat10"
+    },
+    {
+      "id": "ilk",
+      "name": "ILK",
+      "ticker": "ILK",
+      "price": 4.2262,
+      "change24h": -8.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ilk",
+      "category": "cat10"
+    },
+    {
+      "id": "ink",
+      "name": "INK",
+      "ticker": "INK",
+      "price": 2.6943,
+      "change24h": 13.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ink",
+      "category": "cat10"
+    },
+    {
+      "id": "ins",
+      "name": "INS",
+      "ticker": "INS",
+      "price": 3.0197,
+      "change24h": 13.21,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ins",
+      "category": "cat10"
+    },
+    {
+      "id": "ion",
+      "name": "ION",
+      "ticker": "ION",
+      "price": 1.789,
+      "change24h": 8.01,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ion",
+      "category": "cat10"
+    },
+    {
+      "id": "iop",
+      "name": "IOP",
+      "ticker": "IOP",
+      "price": 1.5441,
+      "change24h": -1.61,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/iop",
+      "category": "cat10"
+    },
+    {
+      "id": "iost",
+      "name": "IOST",
+      "ticker": "IOST",
+      "price": 0.1349,
+      "change24h": 9.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/iost",
+      "category": "cat5"
+    },
+    {
+      "id": "iotx",
+      "name": "IOTX",
+      "ticker": "IOTX",
+      "price": 1.797,
+      "change24h": 1.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/iotx",
+      "category": "cat5"
+    },
+    {
+      "id": "iq",
+      "name": "IQ",
+      "ticker": "IQ",
+      "price": 3.6902,
+      "change24h": 1.97,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/iq",
+      "category": "cat5"
+    },
+    {
+      "id": "itc",
+      "name": "ITC",
+      "ticker": "ITC",
+      "price": 4.3574,
+      "change24h": 2.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/itc",
+      "category": "cat10"
+    },
+    {
+      "id": "jnt",
+      "name": "JNT",
+      "ticker": "JNT",
+      "price": 3.9119,
+      "change24h": -6.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/jnt",
+      "category": "cat10"
+    },
+    {
+      "id": "jpy",
+      "name": "JPY",
+      "ticker": "JPY",
+      "price": 1.0859,
+      "change24h": 13.32,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/jpy",
+      "category": "cat3"
+    },
+    {
+      "id": "kcs",
+      "name": "KuCoin Token",
+      "ticker": "KCS",
+      "price": 2.9576,
+      "change24h": -10.2,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/kcs",
+      "category": "cat4"
+    },
+    {
+      "id": "kin",
+      "name": "KIN",
+      "ticker": "KIN",
+      "price": 3.9797,
+      "change24h": -6.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/kin",
+      "category": "cat10"
+    },
+    {
+      "id": "klown",
+      "name": "KLOWN",
+      "ticker": "KLOWN",
+      "price": 0.768,
+      "change24h": -16.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/klown",
+      "category": "cat10"
+    },
+    {
+      "id": "kmd",
+      "name": "KMD",
+      "ticker": "KMD",
+      "price": 4.3025,
+      "change24h": -15.85,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/kmd",
+      "category": "cat1"
+    },
+    {
+      "id": "knc",
+      "name": "KNC",
+      "ticker": "KNC",
+      "price": 1.6012,
+      "change24h": 14.27,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/knc",
+      "category": "cat2"
+    },
+    {
+      "id": "krb",
+      "name": "KRB",
+      "ticker": "KRB",
+      "price": 3.1984,
+      "change24h": -19.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/krb",
+      "category": "cat10"
+    },
+    {
+      "id": "ksm",
+      "name": "Kusama",
+      "ticker": "KSM",
+      "price": 2.2267,
+      "change24h": -5.21,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ksm",
+      "category": "cat1"
+    },
+    {
+      "id": "lbc",
+      "name": "LBC",
+      "ticker": "LBC",
+      "price": 3.5029,
+      "change24h": -13.43,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lbc",
+      "category": "cat10"
+    },
+    {
+      "id": "lend",
+      "name": "LEND",
+      "ticker": "LEND",
+      "price": 0.4575,
+      "change24h": 9.92,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lend",
+      "category": "cat2"
+    },
+    {
+      "id": "leo",
+      "name": "LEO",
+      "ticker": "LEO",
+      "price": 3.363,
+      "change24h": 7.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/leo",
+      "category": "cat4"
+    },
+    {
+      "id": "link",
+      "name": "Chainlink",
+      "ticker": "LINK",
+      "price": 21.2668,
+      "change24h": 10.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/link",
+      "category": "cat2"
+    },
+    {
+      "id": "lkk",
+      "name": "LKK",
+      "ticker": "LKK",
+      "price": 0.5339,
+      "change24h": -16.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lkk",
+      "category": "cat10"
+    },
+    {
+      "id": "loom",
+      "name": "LOOM",
+      "ticker": "LOOM",
+      "price": 0.9425,
+      "change24h": -7.59,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/loom",
+      "category": "cat6"
+    },
+    {
+      "id": "lpt",
+      "name": "LPT",
+      "ticker": "LPT",
+      "price": 4.9267,
+      "change24h": -16.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lpt",
+      "category": "cat6"
+    },
+    {
+      "id": "lrc",
+      "name": "LRC",
+      "ticker": "LRC",
+      "price": 4.3187,
+      "change24h": -19.66,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lrc",
+      "category": "cat6"
+    },
+    {
+      "id": "lsk",
+      "name": "LSK",
+      "ticker": "LSK",
+      "price": 0.4817,
+      "change24h": 4.74,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lsk",
+      "category": "cat10"
+    },
+    {
+      "id": "ltc",
+      "name": "Litecoin",
+      "ticker": "LTC",
+      "price": 110.7694,
+      "change24h": 14.76,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ltc",
+      "category": "cat1"
+    },
+    {
+      "id": "lun",
+      "name": "LUN",
+      "ticker": "LUN",
+      "price": 4.8532,
+      "change24h": 13.06,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/lun",
+      "category": "cat10"
+    },
+    {
+      "id": "maid",
+      "name": "MAID",
+      "ticker": "MAID",
+      "price": 1.7273,
+      "change24h": -1.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/maid",
+      "category": "cat10"
+    },
+    {
+      "id": "mana",
+      "name": "Decentraland",
+      "ticker": "MANA",
+      "price": 0.7685,
+      "change24h": -2.42,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mana",
+      "category": "cat2"
+    },
+    {
+      "id": "matic",
+      "name": "Polygon",
+      "ticker": "MATIC",
+      "price": 0.6113,
+      "change24h": 1.03,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/matic",
+      "category": "cat10"
+    },
+    {
+      "id": "max",
+      "name": "MAX",
+      "ticker": "MAX",
+      "price": 0.5748,
+      "change24h": 9.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/max",
+      "category": "cat10"
+    },
+    {
+      "id": "mcap",
+      "name": "MCAP",
+      "ticker": "MCAP",
+      "price": 1.5378,
+      "change24h": 11.49,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mcap",
+      "category": "cat10"
+    },
+    {
+      "id": "mco",
+      "name": "MCO",
+      "ticker": "MCO",
+      "price": 0.4565,
+      "change24h": -9.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mco",
+      "category": "cat10"
+    },
+    {
+      "id": "mda",
+      "name": "MDA",
+      "ticker": "MDA",
+      "price": 3.1098,
+      "change24h": -3.8,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mda",
+      "category": "cat10"
+    },
+    {
+      "id": "mds",
+      "name": "MDS",
+      "ticker": "MDS",
+      "price": 0.2839,
+      "change24h": -10.09,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mds",
+      "category": "cat10"
+    },
+    {
+      "id": "med",
+      "name": "MED",
+      "ticker": "MED",
+      "price": 1.5751,
+      "change24h": 0.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/med",
+      "category": "cat10"
+    },
+    {
+      "id": "meetone",
+      "name": "MEETONE",
+      "ticker": "MEETONE",
+      "price": 0.8959,
+      "change24h": -5.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/meetone",
+      "category": "cat10"
+    },
+    {
+      "id": "mft",
+      "name": "MFT",
+      "ticker": "MFT",
+      "price": 0.6515,
+      "change24h": 13.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mft",
+      "category": "cat10"
+    },
+    {
+      "id": "miota",
+      "name": "MIOTA",
+      "ticker": "MIOTA",
+      "price": 0.4551,
+      "change24h": 1.09,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/miota",
+      "category": "cat10"
+    },
+    {
+      "id": "mith",
+      "name": "MITH",
+      "ticker": "MITH",
+      "price": 0.2295,
+      "change24h": -3.21,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mith",
+      "category": "cat10"
+    },
+    {
+      "id": "mkr",
+      "name": "Maker",
+      "ticker": "MKR",
+      "price": 1264.6934,
+      "change24h": -3.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mkr",
+      "category": "cat2"
+    },
+    {
+      "id": "mln",
+      "name": "MLN",
+      "ticker": "MLN",
+      "price": 4.4571,
+      "change24h": -0.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mln",
+      "category": "cat10"
+    },
+    {
+      "id": "mnx",
+      "name": "MNX",
+      "ticker": "MNX",
+      "price": 2.8244,
+      "change24h": 18.9,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mnx",
+      "category": "cat10"
+    },
+    {
+      "id": "mnz",
+      "name": "MNZ",
+      "ticker": "MNZ",
+      "price": 3.2705,
+      "change24h": -13.02,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mnz",
+      "category": "cat10"
+    },
+    {
+      "id": "moac",
+      "name": "MOAC",
+      "ticker": "MOAC",
+      "price": 0.4563,
+      "change24h": 2.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/moac",
+      "category": "cat10"
+    },
+    {
+      "id": "mod",
+      "name": "MOD",
+      "ticker": "MOD",
+      "price": 3.939,
+      "change24h": -3.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mod",
+      "category": "cat10"
+    },
+    {
+      "id": "mona",
+      "name": "MONA",
+      "ticker": "MONA",
+      "price": 1.9397,
+      "change24h": 6.86,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mona",
+      "category": "cat10"
+    },
+    {
+      "id": "msr",
+      "name": "MSR",
+      "ticker": "MSR",
+      "price": 2.6342,
+      "change24h": -17.93,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/msr",
+      "category": "cat10"
+    },
+    {
+      "id": "mth",
+      "name": "MTH",
+      "ticker": "MTH",
+      "price": 4.363,
+      "change24h": 18.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mth",
+      "category": "cat10"
+    },
+    {
+      "id": "mtl",
+      "name": "MTL",
+      "ticker": "MTL",
+      "price": 3.3449,
+      "change24h": -2.28,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mtl",
+      "category": "cat10"
+    },
+    {
+      "id": "music",
+      "name": "MUSIC",
+      "ticker": "MUSIC",
+      "price": 0.1752,
+      "change24h": -0.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/music",
+      "category": "cat10"
+    },
+    {
+      "id": "mzc",
+      "name": "MZC",
+      "ticker": "MZC",
+      "price": 4.1404,
+      "change24h": -0.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/mzc",
+      "category": "cat10"
+    },
+    {
+      "id": "nano",
+      "name": "Nano",
+      "ticker": "NANO",
+      "price": 1.5597,
+      "change24h": 17.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nano",
+      "category": "cat8"
+    },
+    {
+      "id": "nas",
+      "name": "NAS",
+      "ticker": "NAS",
+      "price": 3.4074,
+      "change24h": 11.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nas",
+      "category": "cat10"
+    },
+    {
+      "id": "nav",
+      "name": "NAV",
+      "ticker": "NAV",
+      "price": 0.6075,
+      "change24h": -8.22,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nav",
+      "category": "cat9"
+    },
+    {
+      "id": "ncash",
+      "name": "NCASH",
+      "ticker": "NCASH",
+      "price": 1.7322,
+      "change24h": -17.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ncash",
+      "category": "cat10"
+    },
+    {
+      "id": "ndz",
+      "name": "NDZ",
+      "ticker": "NDZ",
+      "price": 2.7704,
+      "change24h": -1.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ndz",
+      "category": "cat10"
+    },
+    {
+      "id": "nebl",
+      "name": "NEBL",
+      "ticker": "NEBL",
+      "price": 0.4473,
+      "change24h": 3.09,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nebl",
+      "category": "cat10"
+    },
+    {
+      "id": "neo",
+      "name": "NEO",
+      "ticker": "NEO",
+      "price": 0.4861,
+      "change24h": 3.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/neo",
+      "category": "cat1"
+    },
+    {
+      "id": "neos",
+      "name": "NEOS",
+      "ticker": "NEOS",
+      "price": 0.8328,
+      "change24h": 10.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/neos",
+      "category": "cat10"
+    },
+    {
+      "id": "neu",
+      "name": "NEU",
+      "ticker": "NEU",
+      "price": 0.435,
+      "change24h": 6.92,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/neu",
+      "category": "cat10"
+    },
+    {
+      "id": "nexo",
+      "name": "NEXO",
+      "ticker": "NEXO",
+      "price": 0.8312,
+      "change24h": -19.86,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nexo",
+      "category": "cat10"
+    },
+    {
+      "id": "ngc",
+      "name": "NGC",
+      "ticker": "NGC",
+      "price": 1.2325,
+      "change24h": 3.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ngc",
+      "category": "cat10"
+    },
+    {
+      "id": "nio",
+      "name": "NIO",
+      "ticker": "NIO",
+      "price": 4.8852,
+      "change24h": -7.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nio",
+      "category": "cat10"
+    },
+    {
+      "id": "nkn",
+      "name": "NKN",
+      "ticker": "NKN",
+      "price": 3.8092,
+      "change24h": 7.05,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nkn",
+      "category": "cat10"
+    },
+    {
+      "id": "nlc2",
+      "name": "NLC2",
+      "ticker": "NLC2",
+      "price": 0.1442,
+      "change24h": 5.29,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nlc2",
+      "category": "cat10"
+    },
+    {
+      "id": "nlg",
+      "name": "NLG",
+      "ticker": "NLG",
+      "price": 4.194,
+      "change24h": -17.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nlg",
+      "category": "cat10"
+    },
+    {
+      "id": "nmc",
+      "name": "NMC",
+      "ticker": "NMC",
+      "price": 1.6322,
+      "change24h": -16.36,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nmc",
+      "category": "cat10"
+    },
+    {
+      "id": "nmr",
+      "name": "NMR",
+      "ticker": "NMR",
+      "price": 2.3122,
+      "change24h": -13.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nmr",
+      "category": "cat10"
+    },
+    {
+      "id": "npxs",
+      "name": "NPXS",
+      "ticker": "NPXS",
+      "price": 1.9236,
+      "change24h": -6.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/npxs",
+      "category": "cat10"
+    },
+    {
+      "id": "ntbc",
+      "name": "NTBC",
+      "ticker": "NTBC",
+      "price": 0.0991,
+      "change24h": 8.28,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ntbc",
+      "category": "cat10"
+    },
+    {
+      "id": "nuls",
+      "name": "NULS",
+      "ticker": "NULS",
+      "price": 0.6096,
+      "change24h": -9.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nuls",
+      "category": "cat1"
+    },
+    {
+      "id": "nxs",
+      "name": "NXS",
+      "ticker": "NXS",
+      "price": 1.4148,
+      "change24h": 14.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nxs",
+      "category": "cat10"
+    },
+    {
+      "id": "nxt",
+      "name": "NXT",
+      "ticker": "NXT",
+      "price": 0.6061,
+      "change24h": -7.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/nxt",
+      "category": "cat10"
+    },
+    {
+      "id": "oax",
+      "name": "OAX",
+      "ticker": "OAX",
+      "price": 3.8726,
+      "change24h": -3.52,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/oax",
+      "category": "cat10"
+    },
+    {
+      "id": "ok",
+      "name": "OKCash",
+      "ticker": "OK",
+      "price": 2.277,
+      "change24h": -14.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ok",
+      "category": "cat4"
+    },
+    {
+      "id": "omg",
+      "name": "OMG",
+      "ticker": "OMG",
+      "price": 4.9393,
+      "change24h": -0.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/omg",
+      "category": "cat2"
+    },
+    {
+      "id": "omni",
+      "name": "OMNI",
+      "ticker": "OMNI",
+      "price": 1.6065,
+      "change24h": -19.12,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/omni",
+      "category": "cat10"
+    },
+    {
+      "id": "one",
+      "name": "ONE",
+      "ticker": "ONE",
+      "price": 4.8543,
+      "change24h": 3.43,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/one",
+      "category": "cat10"
+    },
+    {
+      "id": "ong",
+      "name": "ONG",
+      "ticker": "ONG",
+      "price": 3.3528,
+      "change24h": 4.53,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ong",
+      "category": "cat10"
+    },
+    {
+      "id": "ont",
+      "name": "ONT",
+      "ticker": "ONT",
+      "price": 1.1429,
+      "change24h": 2.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ont",
+      "category": "cat10"
+    },
+    {
+      "id": "oot",
+      "name": "OOT",
+      "ticker": "OOT",
+      "price": 1.9298,
+      "change24h": 13.06,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/oot",
+      "category": "cat10"
+    },
+    {
+      "id": "ost",
+      "name": "OST",
+      "ticker": "OST",
+      "price": 2.6662,
+      "change24h": -15.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ost",
+      "category": "cat10"
+    },
+    {
+      "id": "ox",
+      "name": "OX",
+      "ticker": "OX",
+      "price": 2.7616,
+      "change24h": 5.68,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ox",
+      "category": "cat10"
+    },
+    {
+      "id": "oxt",
+      "name": "OXT",
+      "ticker": "OXT",
+      "price": 0.1458,
+      "change24h": -19.8,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/oxt",
+      "category": "cat10"
+    },
+    {
+      "id": "oxy",
+      "name": "OXY",
+      "ticker": "OXY",
+      "price": 4.4749,
+      "change24h": -14.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/oxy",
+      "category": "cat10"
+    },
+    {
+      "id": "part",
+      "name": "PART",
+      "ticker": "PART",
+      "price": 1.2361,
+      "change24h": 0.29,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/part",
+      "category": "cat10"
+    },
+    {
+      "id": "pasc",
+      "name": "PASC",
+      "ticker": "PASC",
+      "price": 0.3625,
+      "change24h": -13.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pasc",
+      "category": "cat10"
+    },
+    {
+      "id": "pasl",
+      "name": "PASL",
+      "ticker": "PASL",
+      "price": 1.5108,
+      "change24h": 16.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pasl",
+      "category": "cat10"
+    },
+    {
+      "id": "pax",
+      "name": "Paxos Standard",
+      "ticker": "PAX",
+      "price": 2.4507,
+      "change24h": 13.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pax",
+      "category": "cat2"
+    },
+    {
+      "id": "paxg",
+      "name": "PAX Gold",
+      "ticker": "PAXG",
+      "price": 0.0958,
+      "change24h": -15.98,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/paxg",
+      "category": "cat2"
+    },
+    {
+      "id": "pay",
+      "name": "PAY",
+      "ticker": "PAY",
+      "price": 3.1862,
+      "change24h": 16.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pay",
+      "category": "cat10"
+    },
+    {
+      "id": "payx",
+      "name": "PAYX",
+      "ticker": "PAYX",
+      "price": 1.5611,
+      "change24h": -17.25,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/payx",
+      "category": "cat10"
+    },
+    {
+      "id": "pink",
+      "name": "PINK",
+      "ticker": "PINK",
+      "price": 0.234,
+      "change24h": -17.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pink",
+      "category": "cat10"
+    },
+    {
+      "id": "pirl",
+      "name": "PIRL",
+      "ticker": "PIRL",
+      "price": 1.5434,
+      "change24h": -11.47,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pirl",
+      "category": "cat10"
+    },
+    {
+      "id": "pivx",
+      "name": "PIVX",
+      "ticker": "PIVX",
+      "price": 1.8954,
+      "change24h": -2.68,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pivx",
+      "category": "cat9"
+    },
+    {
+      "id": "plr",
+      "name": "PLR",
+      "ticker": "PLR",
+      "price": 1.6496,
+      "change24h": -15.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/plr",
+      "category": "cat10"
+    },
+    {
+      "id": "poa",
+      "name": "POA",
+      "ticker": "POA",
+      "price": 1.4494,
+      "change24h": -15.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/poa",
+      "category": "cat10"
+    },
+    {
+      "id": "poe",
+      "name": "POE",
+      "ticker": "POE",
+      "price": 4.8074,
+      "change24h": 13.14,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/poe",
+      "category": "cat10"
+    },
+    {
+      "id": "polis",
+      "name": "POLIS",
+      "ticker": "POLIS",
+      "price": 1.4025,
+      "change24h": -18.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/polis",
+      "category": "cat10"
+    },
+    {
+      "id": "poly",
+      "name": "POLY",
+      "ticker": "POLY",
+      "price": 0.8875,
+      "change24h": 4.13,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/poly",
+      "category": "cat10"
+    },
+    {
+      "id": "pot",
+      "name": "POT",
+      "ticker": "POT",
+      "price": 2.1422,
+      "change24h": 4.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pot",
+      "category": "cat10"
+    },
+    {
+      "id": "powr",
+      "name": "POWR",
+      "ticker": "POWR",
+      "price": 0.3655,
+      "change24h": -3.98,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/powr",
+      "category": "cat10"
+    },
+    {
+      "id": "ppc",
+      "name": "PPC",
+      "ticker": "PPC",
+      "price": 2.7532,
+      "change24h": 15.07,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ppc",
+      "category": "cat10"
+    },
+    {
+      "id": "ppp",
+      "name": "PPP",
+      "ticker": "PPP",
+      "price": 4.7944,
+      "change24h": 13.45,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ppp",
+      "category": "cat10"
+    },
+    {
+      "id": "ppt",
+      "name": "PPT",
+      "ticker": "PPT",
+      "price": 2.3467,
+      "change24h": 19.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ppt",
+      "category": "cat10"
+    },
+    {
+      "id": "pre",
+      "name": "PRE",
+      "ticker": "PRE",
+      "price": 4.3486,
+      "change24h": 7.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pre",
+      "category": "cat10"
+    },
+    {
+      "id": "prl",
+      "name": "PRL",
+      "ticker": "PRL",
+      "price": 1.6857,
+      "change24h": 19.85,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/prl",
+      "category": "cat10"
+    },
+    {
+      "id": "pungo",
+      "name": "PUNGO",
+      "ticker": "PUNGO",
+      "price": 0.716,
+      "change24h": 15.22,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pungo",
+      "category": "cat10"
+    },
+    {
+      "id": "pura",
+      "name": "PURA",
+      "ticker": "PURA",
+      "price": 0.6106,
+      "change24h": 16.11,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/pura",
+      "category": "cat10"
+    },
+    {
+      "id": "qash",
+      "name": "QASH",
+      "ticker": "QASH",
+      "price": 1.1235,
+      "change24h": 13.64,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qash",
+      "category": "cat4"
+    },
+    {
+      "id": "qiwi",
+      "name": "QIWI",
+      "ticker": "QIWI",
+      "price": 0.1699,
+      "change24h": -3.42,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qiwi",
+      "category": "cat10"
+    },
+    {
+      "id": "qlc",
+      "name": "QLC",
+      "ticker": "QLC",
+      "price": 3.7885,
+      "change24h": -15.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qlc",
+      "category": "cat10"
+    },
+    {
+      "id": "qnt",
+      "name": "QNT",
+      "ticker": "QNT",
+      "price": 2.9971,
+      "change24h": 7.97,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qnt",
+      "category": "cat2"
+    },
+    {
+      "id": "qrl",
+      "name": "QRL",
+      "ticker": "QRL",
+      "price": 0.2225,
+      "change24h": -12.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qrl",
+      "category": "cat10"
+    },
+    {
+      "id": "qsp",
+      "name": "QSP",
+      "ticker": "QSP",
+      "price": 2.4769,
+      "change24h": -17.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qsp",
+      "category": "cat10"
+    },
+    {
+      "id": "qtum",
+      "name": "Qtum",
+      "ticker": "QTUM",
+      "price": 0.3672,
+      "change24h": 3.73,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/qtum",
+      "category": "cat1"
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "ticker": "R",
+      "price": 0.3892,
+      "change24h": 4.72,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/r",
+      "category": "cat10"
+    },
+    {
+      "id": "rads",
+      "name": "RADS",
+      "ticker": "RADS",
+      "price": 1.1391,
+      "change24h": -14.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rads",
+      "category": "cat10"
+    },
+    {
+      "id": "rap",
+      "name": "RAP",
+      "ticker": "RAP",
+      "price": 3.972,
+      "change24h": 9.36,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rap",
+      "category": "cat10"
+    },
+    {
+      "id": "ray",
+      "name": "Raydium",
+      "ticker": "RAY",
+      "price": 1.2891,
+      "change24h": -2.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ray",
+      "category": "cat7"
+    },
+    {
+      "id": "rcn",
+      "name": "RCN",
+      "ticker": "RCN",
+      "price": 4.8827,
+      "change24h": -8.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rcn",
+      "category": "cat10"
+    },
+    {
+      "id": "rdd",
+      "name": "RDD",
+      "ticker": "RDD",
+      "price": 2.7751,
+      "change24h": 9.79,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rdd",
+      "category": "cat10"
+    },
+    {
+      "id": "rdn",
+      "name": "RDN",
+      "ticker": "RDN",
+      "price": 3.6476,
+      "change24h": -16.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rdn",
+      "category": "cat10"
+    },
+    {
+      "id": "ren",
+      "name": "REN",
+      "ticker": "REN",
+      "price": 2.2324,
+      "change24h": -13.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ren",
+      "category": "cat10"
+    },
+    {
+      "id": "rep",
+      "name": "REP",
+      "ticker": "REP",
+      "price": 3.9152,
+      "change24h": 13.48,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rep",
+      "category": "cat10"
+    },
+    {
+      "id": "repv2",
+      "name": "REPV2",
+      "ticker": "REPV2",
+      "price": 1.8002,
+      "change24h": 0.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/repv2",
+      "category": "cat10"
+    },
+    {
+      "id": "req",
+      "name": "REQ",
+      "ticker": "REQ",
+      "price": 0.7179,
+      "change24h": 13.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/req",
+      "category": "cat10"
+    },
+    {
+      "id": "rhoc",
+      "name": "RHOC",
+      "ticker": "RHOC",
+      "price": 1.239,
+      "change24h": -3.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rhoc",
+      "category": "cat10"
+    },
+    {
+      "id": "ric",
+      "name": "RIC",
+      "ticker": "RIC",
+      "price": 4.7282,
+      "change24h": -15.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ric",
+      "category": "cat10"
+    },
+    {
+      "id": "rise",
+      "name": "RISE",
+      "ticker": "RISE",
+      "price": 1.8209,
+      "change24h": 19.11,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rise",
+      "category": "cat10"
+    },
+    {
+      "id": "rlc",
+      "name": "RLC",
+      "ticker": "RLC",
+      "price": 1.7924,
+      "change24h": 19.11,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rlc",
+      "category": "cat2"
+    },
+    {
+      "id": "rpx",
+      "name": "RPX",
+      "ticker": "RPX",
+      "price": 4.066,
+      "change24h": 10.25,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rpx",
+      "category": "cat10"
+    },
+    {
+      "id": "rub",
+      "name": "RUB",
+      "ticker": "RUB",
+      "price": 4.4356,
+      "change24h": -14.99,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rub",
+      "category": "cat3"
+    },
+    {
+      "id": "rvn",
+      "name": "RVN",
+      "ticker": "RVN",
+      "price": 2.3787,
+      "change24h": -6.86,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/rvn",
+      "category": "cat10"
+    },
+    {
+      "id": "ryo",
+      "name": "RYO",
+      "ticker": "RYO",
+      "price": 4.7235,
+      "change24h": 15.73,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ryo",
+      "category": "cat9"
+    },
+    {
+      "id": "safe",
+      "name": "SAFE",
+      "ticker": "SAFE",
+      "price": 1.5235,
+      "change24h": 0.66,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/safe",
+      "category": "cat9"
+    },
+    {
+      "id": "safemoon",
+      "name": "SafeMoon",
+      "ticker": "SAFEMOON",
+      "price": 0.4491,
+      "change24h": 15.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/safemoon",
+      "category": "cat10"
+    },
+    {
+      "id": "sai",
+      "name": "SAI",
+      "ticker": "SAI",
+      "price": 0.3841,
+      "change24h": 18.96,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sai",
+      "category": "cat10"
+    },
+    {
+      "id": "salt",
+      "name": "SALT",
+      "ticker": "SALT",
+      "price": 0.1018,
+      "change24h": 5.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/salt",
+      "category": "cat10"
+    },
+    {
+      "id": "san",
+      "name": "SAN",
+      "ticker": "SAN",
+      "price": 0.5437,
+      "change24h": 18.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/san",
+      "category": "cat10"
+    },
+    {
+      "id": "sand",
+      "name": "The Sandbox",
+      "ticker": "SAND",
+      "price": 0.3789,
+      "change24h": -9.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sand",
+      "category": "cat7"
+    },
+    {
+      "id": "sbd",
+      "name": "SBD",
+      "ticker": "SBD",
+      "price": 2.844,
+      "change24h": 11.93,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sbd",
+      "category": "cat10"
+    },
+    {
+      "id": "sberbank",
+      "name": "SBERBANK",
+      "ticker": "SBERBANK",
+      "price": 0.2947,
+      "change24h": -13.18,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sberbank",
+      "category": "cat3"
+    },
+    {
+      "id": "sc",
+      "name": "Siacoin",
+      "ticker": "SC",
+      "price": 3.7978,
+      "change24h": -8.11,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sc",
+      "category": "cat6"
+    },
+    {
+      "id": "ser",
+      "name": "SER",
+      "ticker": "SER",
+      "price": 3.4901,
+      "change24h": 13.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ser",
+      "category": "cat10"
+    },
+    {
+      "id": "shift",
+      "name": "SHIFT",
+      "ticker": "SHIFT",
+      "price": 0.4679,
+      "change24h": -1.14,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/shift",
+      "category": "cat10"
+    },
+    {
+      "id": "sib",
+      "name": "SIB",
+      "ticker": "SIB",
+      "price": 1.965,
+      "change24h": -4.77,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sib",
+      "category": "cat10"
+    },
+    {
+      "id": "sin",
+      "name": "SIN",
+      "ticker": "SIN",
+      "price": 3.135,
+      "change24h": -6.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sin",
+      "category": "cat10"
+    },
+    {
+      "id": "skl",
+      "name": "SKL",
+      "ticker": "SKL",
+      "price": 1.8308,
+      "change24h": 9.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/skl",
+      "category": "cat10"
+    },
+    {
+      "id": "sky",
+      "name": "SKY",
+      "ticker": "SKY",
+      "price": 0.7718,
+      "change24h": 17.68,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sky",
+      "category": "cat10"
+    },
+    {
+      "id": "slr",
+      "name": "SLR",
+      "ticker": "SLR",
+      "price": 0.3523,
+      "change24h": -4.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/slr",
+      "category": "cat10"
+    },
+    {
+      "id": "sls",
+      "name": "SLS",
+      "ticker": "SLS",
+      "price": 0.3137,
+      "change24h": -1.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sls",
+      "category": "cat10"
+    },
+    {
+      "id": "smart",
+      "name": "SMART",
+      "ticker": "SMART",
+      "price": 1.2614,
+      "change24h": 2.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/smart",
+      "category": "cat10"
+    },
+    {
+      "id": "sngls",
+      "name": "SNGLS",
+      "ticker": "SNGLS",
+      "price": 1.5847,
+      "change24h": -5.13,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sngls",
+      "category": "cat10"
+    },
+    {
+      "id": "snm",
+      "name": "SNM",
+      "ticker": "SNM",
+      "price": 3.9634,
+      "change24h": 0.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/snm",
+      "category": "cat10"
+    },
+    {
+      "id": "snt",
+      "name": "SNT",
+      "ticker": "SNT",
+      "price": 2.2232,
+      "change24h": 19.25,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/snt",
+      "category": "cat2"
+    },
+    {
+      "id": "snx",
+      "name": "Synthetix",
+      "ticker": "SNX",
+      "price": 3.5514,
+      "change24h": 11.52,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/snx",
+      "category": "cat2"
+    },
+    {
+      "id": "soc",
+      "name": "SOC",
+      "ticker": "SOC",
+      "price": 0.138,
+      "change24h": -18.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/soc",
+      "category": "cat10"
+    },
+    {
+      "id": "sol",
+      "name": "Solana",
+      "ticker": "SOL",
+      "price": 105.233,
+      "change24h": 15.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sol",
+      "category": "cat0"
+    },
+    {
+      "id": "spacehbit",
+      "name": "SPACEHBIT",
+      "ticker": "SPACEHBIT",
+      "price": 0.7213,
+      "change24h": 10.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/spacehbit",
+      "category": "cat10"
+    },
+    {
+      "id": "spank",
+      "name": "SPANK",
+      "ticker": "SPANK",
+      "price": 0.0024,
+      "change24h": 1.81,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/spank",
+      "category": "cat10"
+    },
+    {
+      "id": "sphtx",
+      "name": "SPHTX",
+      "ticker": "SPHTX",
+      "price": 1.838,
+      "change24h": -8.41,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sphtx",
+      "category": "cat10"
+    },
+    {
+      "id": "srn",
+      "name": "SRN",
+      "ticker": "SRN",
+      "price": 2.5165,
+      "change24h": -16.73,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/srn",
+      "category": "cat10"
+    },
+    {
+      "id": "stak",
+      "name": "STAK",
+      "ticker": "STAK",
+      "price": 1.1173,
+      "change24h": 3.89,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/stak",
+      "category": "cat10"
+    },
+    {
+      "id": "start",
+      "name": "START",
+      "ticker": "START",
+      "price": 1.6811,
+      "change24h": -0.63,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/start",
+      "category": "cat10"
+    },
+    {
+      "id": "steem",
+      "name": "STEEM",
+      "ticker": "STEEM",
+      "price": 0.3663,
+      "change24h": -11.8,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/steem",
+      "category": "cat10"
+    },
+    {
+      "id": "storj",
+      "name": "Storj",
+      "ticker": "STORJ",
+      "price": 0.3004,
+      "change24h": 16.07,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/storj",
+      "category": "cat6"
+    },
+    {
+      "id": "storm",
+      "name": "STORM",
+      "ticker": "STORM",
+      "price": 0.0075,
+      "change24h": -9.2,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/storm",
+      "category": "cat10"
+    },
+    {
+      "id": "stox",
+      "name": "STOX",
+      "ticker": "STOX",
+      "price": 1.2697,
+      "change24h": 18.88,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/stox",
+      "category": "cat10"
+    },
+    {
+      "id": "stq",
+      "name": "STQ",
+      "ticker": "STQ",
+      "price": 4.6768,
+      "change24h": 1.29,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/stq",
+      "category": "cat10"
+    },
+    {
+      "id": "strat",
+      "name": "STRAT",
+      "ticker": "STRAT",
+      "price": 0.2323,
+      "change24h": 3.35,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/strat",
+      "category": "cat10"
+    },
+    {
+      "id": "stx",
+      "name": "STX",
+      "ticker": "STX",
+      "price": 3.5781,
+      "change24h": 12.41,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/stx",
+      "category": "cat10"
+    },
+    {
+      "id": "sub",
+      "name": "SUB",
+      "ticker": "SUB",
+      "price": 4.4901,
+      "change24h": 4.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sub",
+      "category": "cat10"
+    },
+    {
+      "id": "sumo",
+      "name": "SUMO",
+      "ticker": "SUMO",
+      "price": 0.406,
+      "change24h": 7.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sumo",
+      "category": "cat9"
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "ticker": "SUSHI",
+      "price": 0.7058,
+      "change24h": 17.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sushi",
+      "category": "cat2"
+    },
+    {
+      "id": "sys",
+      "name": "SYS",
+      "ticker": "SYS",
+      "price": 0.6586,
+      "change24h": 14.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/sys",
+      "category": "cat10"
+    },
+    {
+      "id": "taas",
+      "name": "TAAS",
+      "ticker": "TAAS",
+      "price": 0.0784,
+      "change24h": -8.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/taas",
+      "category": "cat10"
+    },
+    {
+      "id": "tau",
+      "name": "TAU",
+      "ticker": "TAU",
+      "price": 1.4735,
+      "change24h": 15.65,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tau",
+      "category": "cat10"
+    },
+    {
+      "id": "tbx",
+      "name": "TBX",
+      "ticker": "TBX",
+      "price": 0.1785,
+      "change24h": 19.55,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tbx",
+      "category": "cat10"
+    },
+    {
+      "id": "tel",
+      "name": "TEL",
+      "ticker": "TEL",
+      "price": 2.2914,
+      "change24h": 8.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tel",
+      "category": "cat10"
+    },
+    {
+      "id": "ten",
+      "name": "TEN",
+      "ticker": "TEN",
+      "price": 3.0279,
+      "change24h": 3.18,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ten",
+      "category": "cat10"
+    },
+    {
+      "id": "tern",
+      "name": "TERN",
+      "ticker": "TERN",
+      "price": 1.6856,
+      "change24h": -5.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tern",
+      "category": "cat10"
+    },
+    {
+      "id": "tgch",
+      "name": "TGCH",
+      "ticker": "TGCH",
+      "price": 1.5886,
+      "change24h": -11.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tgch",
+      "category": "cat10"
+    },
+    {
+      "id": "theta",
+      "name": "THETA",
+      "ticker": "THETA",
+      "price": 1.169,
+      "change24h": 6.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/theta",
+      "category": "cat10"
+    },
+    {
+      "id": "tix",
+      "name": "TIX",
+      "ticker": "TIX",
+      "price": 1.22,
+      "change24h": -5.51,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tix",
+      "category": "cat10"
+    },
+    {
+      "id": "tkn",
+      "name": "TKN",
+      "ticker": "TKN",
+      "price": 4.2994,
+      "change24h": -0.78,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tkn",
+      "category": "cat10"
+    },
+    {
+      "id": "tks",
+      "name": "TKS",
+      "ticker": "TKS",
+      "price": 0.5537,
+      "change24h": -1.87,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tks",
+      "category": "cat10"
+    },
+    {
+      "id": "tnb",
+      "name": "TNB",
+      "ticker": "TNB",
+      "price": 2.7897,
+      "change24h": 4.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tnb",
+      "category": "cat10"
+    },
+    {
+      "id": "tnc",
+      "name": "TNC",
+      "ticker": "TNC",
+      "price": 4.493,
+      "change24h": -12.12,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tnc",
+      "category": "cat10"
+    },
+    {
+      "id": "tnt",
+      "name": "TNT",
+      "ticker": "TNT",
+      "price": 1.9087,
+      "change24h": -3.43,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tnt",
+      "category": "cat10"
+    },
+    {
+      "id": "tomo",
+      "name": "TOMO",
+      "ticker": "TOMO",
+      "price": 1.2303,
+      "change24h": -9.02,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tomo",
+      "category": "cat10"
+    },
+    {
+      "id": "tpay",
+      "name": "TPAY",
+      "ticker": "TPAY",
+      "price": 0.4651,
+      "change24h": -1.72,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tpay",
+      "category": "cat10"
+    },
+    {
+      "id": "trig",
+      "name": "TRIG",
+      "ticker": "TRIG",
+      "price": 1.8161,
+      "change24h": -10.8,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/trig",
+      "category": "cat10"
+    },
+    {
+      "id": "trtl",
+      "name": "TRTL",
+      "ticker": "TRTL",
+      "price": 0.7336,
+      "change24h": -19.43,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/trtl",
+      "category": "cat10"
+    },
+    {
+      "id": "trx",
+      "name": "TRON",
+      "ticker": "TRX",
+      "price": 0.0757,
+      "change24h": 15.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/trx",
+      "category": "cat0"
+    },
+    {
+      "id": "tusd",
+      "name": "TrueUSD",
+      "ticker": "TUSD",
+      "price": 1.5992,
+      "change24h": 11.92,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tusd",
+      "category": "cat2"
+    },
+    {
+      "id": "tzc",
+      "name": "TZC",
+      "ticker": "TZC",
+      "price": 2.6358,
+      "change24h": 6.74,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/tzc",
+      "category": "cat10"
+    },
+    {
+      "id": "ubq",
+      "name": "UBQ",
+      "ticker": "UBQ",
+      "price": 0.8074,
+      "change24h": 14.82,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/ubq",
+      "category": "cat10"
+    },
+    {
+      "id": "uma",
+      "name": "UMA",
+      "ticker": "UMA",
+      "price": 4.3543,
+      "change24h": 14.64,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/uma",
+      "category": "cat10"
+    },
+    {
+      "id": "uni",
+      "name": "Uniswap",
+      "ticker": "UNI",
+      "price": 11.8302,
+      "change24h": -19.5,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/uni",
+      "category": "cat2"
+    },
+    {
+      "id": "unity",
+      "name": "UNITY",
+      "ticker": "UNITY",
+      "price": 1.3513,
+      "change24h": 19.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/unity",
+      "category": "cat10"
+    },
+    {
+      "id": "usd",
+      "name": "USD",
+      "ticker": "USD",
+      "price": 1.8396,
+      "change24h": 4.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/usd",
+      "category": "cat3"
+    },
+    {
+      "id": "usdc",
+      "name": "USD Coin",
+      "ticker": "USDC",
+      "price": 1.1789,
+      "change24h": 6.0,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/usdc",
+      "category": "cat2"
+    },
+    {
+      "id": "usdt",
+      "name": "Tether",
+      "ticker": "USDT",
+      "price": 0.2623,
+      "change24h": -12.57,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/usdt",
+      "category": "cat2"
+    },
+    {
+      "id": "utk",
+      "name": "UTK",
+      "ticker": "UTK",
+      "price": 0.7614,
+      "change24h": 2.9,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/utk",
+      "category": "cat10"
+    },
+    {
+      "id": "veri",
+      "name": "VERI",
+      "ticker": "VERI",
+      "price": 0.6662,
+      "change24h": -14.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/veri",
+      "category": "cat10"
+    },
+    {
+      "id": "vet",
+      "name": "VeChain",
+      "ticker": "VET",
+      "price": 0.0662,
+      "change24h": -2.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vet",
+      "category": "cat1"
+    },
+    {
+      "id": "via",
+      "name": "VIA",
+      "ticker": "VIA",
+      "price": 4.8042,
+      "change24h": 2.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/via",
+      "category": "cat8"
+    },
+    {
+      "id": "vib",
+      "name": "VIB",
+      "ticker": "VIB",
+      "price": 3.3912,
+      "change24h": -15.42,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vib",
+      "category": "cat10"
+    },
+    {
+      "id": "vibe",
+      "name": "VIBE",
+      "ticker": "VIBE",
+      "price": 0.8321,
+      "change24h": -19.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vibe",
+      "category": "cat10"
+    },
+    {
+      "id": "vivo",
+      "name": "VIVO",
+      "ticker": "VIVO",
+      "price": 0.0094,
+      "change24h": -11.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vivo",
+      "category": "cat10"
+    },
+    {
+      "id": "vrc",
+      "name": "VRC",
+      "ticker": "VRC",
+      "price": 2.7101,
+      "change24h": 10.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vrc",
+      "category": "cat10"
+    },
+    {
+      "id": "vrsc",
+      "name": "VRSC",
+      "ticker": "VRSC",
+      "price": 1.4226,
+      "change24h": -15.6,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vrsc",
+      "category": "cat9"
+    },
+    {
+      "id": "vtc",
+      "name": "VTC",
+      "ticker": "VTC",
+      "price": 1.3436,
+      "change24h": 2.24,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vtc",
+      "category": "cat10"
+    },
+    {
+      "id": "vtho",
+      "name": "VTHO",
+      "ticker": "VTHO",
+      "price": 0.3059,
+      "change24h": 3.26,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/vtho",
+      "category": "cat10"
+    },
+    {
+      "id": "wabi",
+      "name": "WABI",
+      "ticker": "WABI",
+      "price": 0.0784,
+      "change24h": -12.03,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wabi",
+      "category": "cat10"
+    },
+    {
+      "id": "wan",
+      "name": "WAN",
+      "ticker": "WAN",
+      "price": 4.1253,
+      "change24h": 18.66,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wan",
+      "category": "cat6"
+    },
+    {
+      "id": "waves",
+      "name": "Waves",
+      "ticker": "WAVES",
+      "price": 1.9725,
+      "change24h": -4.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/waves",
+      "category": "cat6"
+    },
+    {
+      "id": "wax",
+      "name": "WAX",
+      "ticker": "WAX",
+      "price": 2.7454,
+      "change24h": 19.29,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wax",
+      "category": "cat7"
+    },
+    {
+      "id": "wbtc",
+      "name": "WBTC",
+      "ticker": "WBTC",
+      "price": 0.7295,
+      "change24h": -4.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wbtc",
+      "category": "cat1"
+    },
+    {
+      "id": "wgr",
+      "name": "WGR",
+      "ticker": "WGR",
+      "price": 3.7783,
+      "change24h": 2.38,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wgr",
+      "category": "cat10"
+    },
+    {
+      "id": "wicc",
+      "name": "WICC",
+      "ticker": "WICC",
+      "price": 1.519,
+      "change24h": -8.69,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wicc",
+      "category": "cat10"
+    },
+    {
+      "id": "wings",
+      "name": "WINGS",
+      "ticker": "WINGS",
+      "price": 1.8757,
+      "change24h": -15.27,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wings",
+      "category": "cat10"
+    },
+    {
+      "id": "wpr",
+      "name": "WPR",
+      "ticker": "WPR",
+      "price": 0.5066,
+      "change24h": 0.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wpr",
+      "category": "cat10"
+    },
+    {
+      "id": "wtc",
+      "name": "WTC",
+      "ticker": "WTC",
+      "price": 0.4495,
+      "change24h": -1.71,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/wtc",
+      "category": "cat6"
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "ticker": "X",
+      "price": 2.5028,
+      "change24h": -11.49,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/x",
+      "category": "cat10"
+    },
+    {
+      "id": "xas",
+      "name": "XAS",
+      "ticker": "XAS",
+      "price": 4.142,
+      "change24h": 13.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xas",
+      "category": "cat1"
+    },
+    {
+      "id": "xbc",
+      "name": "XBC",
+      "ticker": "XBC",
+      "price": 1.3661,
+      "change24h": -12.33,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xbc",
+      "category": "cat8"
+    },
+    {
+      "id": "xbp",
+      "name": "XBP",
+      "ticker": "XBP",
+      "price": 1.0614,
+      "change24h": -11.47,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xbp",
+      "category": "cat10"
+    },
+    {
+      "id": "xby",
+      "name": "XBY",
+      "ticker": "XBY",
+      "price": 1.0478,
+      "change24h": 10.17,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xby",
+      "category": "cat10"
+    },
+    {
+      "id": "xcp",
+      "name": "XCP",
+      "ticker": "XCP",
+      "price": 2.6011,
+      "change24h": 17.34,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xcp",
+      "category": "cat8"
+    },
+    {
+      "id": "xdn",
+      "name": "XDN",
+      "ticker": "XDN",
+      "price": 4.1608,
+      "change24h": -5.69,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xdn",
+      "category": "cat9"
+    },
+    {
+      "id": "xem",
+      "name": "NEM",
+      "ticker": "XEM",
+      "price": 0.9076,
+      "change24h": 11.97,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xem",
+      "category": "cat8"
+    },
+    {
+      "id": "xin",
+      "name": "XIN",
+      "ticker": "XIN",
+      "price": 1.8792,
+      "change24h": 14.4,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xin",
+      "category": "cat10"
+    },
+    {
+      "id": "xlm",
+      "name": "Stellar",
+      "ticker": "XLM",
+      "price": 0.1746,
+      "change24h": 19.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xlm",
+      "category": "cat1"
+    },
+    {
+      "id": "xmcc",
+      "name": "XMCC",
+      "ticker": "XMCC",
+      "price": 0.7651,
+      "change24h": 10.18,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xmcc",
+      "category": "cat9"
+    },
+    {
+      "id": "xmg",
+      "name": "XMG",
+      "ticker": "XMG",
+      "price": 0.2412,
+      "change24h": 7.75,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xmg",
+      "category": "cat9"
+    },
+    {
+      "id": "xmo",
+      "name": "XMO",
+      "ticker": "XMO",
+      "price": 0.8306,
+      "change24h": 7.59,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xmo",
+      "category": "cat9"
+    },
+    {
+      "id": "xmr",
+      "name": "Monero",
+      "ticker": "XMR",
+      "price": 1.0346,
+      "change24h": -1.91,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xmr",
+      "category": "cat1"
+    },
+    {
+      "id": "xmy",
+      "name": "XMY",
+      "ticker": "XMY",
+      "price": 0.1478,
+      "change24h": 17.31,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xmy",
+      "category": "cat10"
+    },
+    {
+      "id": "xp",
+      "name": "XP",
+      "ticker": "XP",
+      "price": 0.6069,
+      "change24h": 15.83,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xp",
+      "category": "cat10"
+    },
+    {
+      "id": "xpa",
+      "name": "XPA",
+      "ticker": "XPA",
+      "price": 3.4179,
+      "change24h": -0.94,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xpa",
+      "category": "cat10"
+    },
+    {
+      "id": "xpm",
+      "name": "XPM",
+      "ticker": "XPM",
+      "price": 0.3494,
+      "change24h": -11.58,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xpm",
+      "category": "cat8"
+    },
+    {
+      "id": "xpr",
+      "name": "XPR",
+      "ticker": "XPR",
+      "price": 4.1782,
+      "change24h": -1.15,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xpr",
+      "category": "cat5"
+    },
+    {
+      "id": "xrp",
+      "name": "XRP",
+      "ticker": "XRP",
+      "price": 0.7565,
+      "change24h": 8.89,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xrp",
+      "category": "cat0"
+    },
+    {
+      "id": "xsg",
+      "name": "XSG",
+      "ticker": "XSG",
+      "price": 1.2666,
+      "change24h": 11.19,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xsg",
+      "category": "cat1"
+    },
+    {
+      "id": "xtz",
+      "name": "Tezos",
+      "ticker": "XTZ",
+      "price": 2.6882,
+      "change24h": -1.7,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xtz",
+      "category": "cat1"
+    },
+    {
+      "id": "xuc",
+      "name": "XUC",
+      "ticker": "XUC",
+      "price": 0.1147,
+      "change24h": -15.54,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xuc",
+      "category": "cat10"
+    },
+    {
+      "id": "xvc",
+      "name": "XVC",
+      "ticker": "XVC",
+      "price": 4.642,
+      "change24h": -15.46,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xvc",
+      "category": "cat8"
+    },
+    {
+      "id": "xvg",
+      "name": "XVG",
+      "ticker": "XVG",
+      "price": 4.3162,
+      "change24h": -12.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xvg",
+      "category": "cat1"
+    },
+    {
+      "id": "xzc",
+      "name": "XZC",
+      "ticker": "XZC",
+      "price": 3.3182,
+      "change24h": -8.27,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/xzc",
+      "category": "cat1"
+    },
+    {
+      "id": "yfi",
+      "name": "yearn.finance",
+      "ticker": "YFI",
+      "price": 8223.9831,
+      "change24h": -12.08,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/yfi",
+      "category": "cat2"
+    },
+    {
+      "id": "yoyow",
+      "name": "YOYOW",
+      "ticker": "YOYOW",
+      "price": 0.1172,
+      "change24h": 5.02,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/yoyow",
+      "category": "cat10"
+    },
+    {
+      "id": "zcl",
+      "name": "ZCL",
+      "ticker": "ZCL",
+      "price": 3.2935,
+      "change24h": -12.79,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zcl",
+      "category": "cat10"
+    },
+    {
+      "id": "zec",
+      "name": "Zcash",
+      "ticker": "ZEC",
+      "price": 0.381,
+      "change24h": -13.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zec",
+      "category": "cat1"
+    },
+    {
+      "id": "zel",
+      "name": "ZEL",
+      "ticker": "ZEL",
+      "price": 3.6115,
+      "change24h": -0.26,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zel",
+      "category": "cat10"
+    },
+    {
+      "id": "zen",
+      "name": "Horizen",
+      "ticker": "ZEN",
+      "price": 3.5763,
+      "change24h": 16.44,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zen",
+      "category": "cat1"
+    },
+    {
+      "id": "zest",
+      "name": "ZEST",
+      "ticker": "ZEST",
+      "price": 1.5527,
+      "change24h": 18.95,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zest",
+      "category": "cat10"
+    },
+    {
+      "id": "zil",
+      "name": "ZIL",
+      "ticker": "ZIL",
+      "price": 4.0943,
+      "change24h": 11.04,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zil",
+      "category": "cat10"
+    },
+    {
+      "id": "zilla",
+      "name": "ZILLA",
+      "ticker": "ZILLA",
+      "price": 1.1827,
+      "change24h": -11.16,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zilla",
+      "category": "cat10"
+    },
+    {
+      "id": "zrx",
+      "name": "ZRX",
+      "ticker": "ZRX",
+      "price": 3.1168,
+      "change24h": 6.66,
+      "iconPath": "android.resource://ru.otus.cryptosample/drawable/zrx",
+      "category": "cat2"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat0",
+      "name": "Top",
+      "order": 0
+    },
+    {
+      "id": "cat1",
+      "name": "Layer-1 & Majors",
+      "order": 1
+    },
+    {
+      "id": "cat2",
+      "name": "DeFi & DEX",
+      "order": 2
+    },
+    {
+      "id": "cat3",
+      "name": "Stablecoins & Fiat & Commodities",
+      "order": 3
+    },
+    {
+      "id": "cat4",
+      "name": "CeFi & Exchange Tokens",
+      "order": 4
+    },
+    {
+      "id": "cat5",
+      "name": "Oracles & Data & Indexing",
+      "order": 5
+    },
+    {
+      "id": "cat6",
+      "name": "Infrastructure & Storage",
+      "order": 6
+    },
+    {
+      "id": "cat7",
+      "name": "NFT, Gaming & Metaverse",
+      "order": 7
+    },
+    {
+      "id": "cat8",
+      "name": "Payments & Remittance",
+      "order": 8
+    },
+    {
+      "id": "cat9",
+      "name": "Privacy & Security",
+      "order": 9
+    },
+    {
+      "id": "cat10",
+      "name": "Meme, Culture & Misc",
+      "order": 10
+    }
+  ]
+}
