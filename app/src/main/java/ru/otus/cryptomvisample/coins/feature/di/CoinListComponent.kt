@@ -9,7 +9,6 @@ import ru.otus.cryptomvisample.coins.domain.ConsumeFavoriteCoinsUseCase
 import ru.otus.cryptomvisample.coins.domain.SetFavouriteCoinUseCase
 import ru.otus.cryptomvisample.coins.domain.UnsetFavouriteCoinUseCase
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptomvisample.coins.feature.CoinListFragment
 import ru.otus.cryptomvisample.coins.feature.CoinListViewModelFactory
 import ru.otus.cryptomvisample.coins.feature.FavoriteCoinsViewModelFactory
 
@@ -24,7 +23,6 @@ interface CoinListComponent {
         ): CoinListComponent
     }
 
-    fun inject(coinListFragment: CoinListFragment)
     fun viewModelFactory(): CoinListViewModelFactory
     fun favoriteCoinsViewModelFactory(): FavoriteCoinsViewModelFactory
 }

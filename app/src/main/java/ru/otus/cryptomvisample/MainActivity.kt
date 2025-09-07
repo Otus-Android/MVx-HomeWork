@@ -9,7 +9,6 @@ import ru.otus.cryptomvisample.coins.feature.FavoriteCoinsViewModelFactory
 import ru.otus.cryptomvisample.coins.feature.di.DaggerCoinListComponent
 import ru.otus.cryptomvisample.ui.navigation.MainNavigation
 import ru.otus.cryptomvisample.ui.theme.CryptomvisampleTheme
-import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
 
