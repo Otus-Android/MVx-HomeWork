@@ -1,9 +1,9 @@
-package ru.otus.cryptosample.di
+package ru.otus.cryptomvisample.di
 
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import ru.otus.cryptosample.coins.feature.di.CoinListComponentDependencies
+import ru.otus.cryptomvisample.coins.feature.di.CoinListComponentDependencies
 import ru.otus.common.di.Dependencies
 import javax.inject.Singleton
 

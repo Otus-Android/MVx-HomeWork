@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/coins_fragment"
-        android:name="ru.otus.cryptomvisample.coins.feature.CoinListFragment"
+        android:name="ru.otus.cryptosample.coins.feature.CoinListFragment"
         android:label="@string/title_coins"
         tools:layout="@layout/fragment_coin_list" />
 

@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.feature
+package ru.otus.cryptomvisample.coins.feature
 
 import android.content.Context
 import android.os.Bundle
@@ -12,10 +12,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.coroutines.launch
-import ru.otus.cryptosample.CoinsSampleApp
-import ru.otus.cryptosample.coins.feature.adapter.CoinsAdapter
-import ru.otus.cryptosample.coins.feature.di.DaggerCoinListComponent
-import ru.otus.cryptosample.databinding.FragmentCoinListBinding
+import ru.otus.cryptomvisample.CoinsSampleApp
+import ru.otus.cryptomvisample.coins.feature.adapter.CoinsAdapter
+import ru.otus.cryptomvisample.coins.feature.di.DaggerCoinListComponent
+import ru.otus.cryptomvisample.databinding.FragmentCoinListBinding
 import javax.inject.Inject
 
 class CoinListFragment : Fragment() {

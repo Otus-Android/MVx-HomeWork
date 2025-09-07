@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.domain
+package ru.otus.cryptomvisample.coins.domain
 
 data class Coin (
     val id: String,

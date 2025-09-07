@@ -1,12 +1,12 @@
-package ru.otus.cryptosample.coins.feature.adapter
+package ru.otus.cryptomvisample.coins.feature.adapter
 
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import ru.otus.cryptosample.R
-import ru.otus.cryptosample.coins.feature.CoinState
-import ru.otus.cryptosample.databinding.ItemCoinBinding
+import ru.otus.cryptomvisample.R
+import ru.otus.cryptomvisample.coins.feature.CoinState
+import ru.otus.cryptomvisample.databinding.ItemCoinBinding
 
 class CoinViewHolder(
     private val binding: ItemCoinBinding,

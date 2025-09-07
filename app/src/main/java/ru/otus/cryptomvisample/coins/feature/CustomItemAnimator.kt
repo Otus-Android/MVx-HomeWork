@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.feature
+package ru.otus.cryptomvisample.coins.feature
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter

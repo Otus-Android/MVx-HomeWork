@@ -1,9 +1,9 @@
-package ru.otus.cryptosample.coins.feature.di
+package ru.otus.cryptomvisample.coins.feature.di
 
 import dagger.Component
-import ru.otus.cryptosample.coins.data.CoinsRepository
+import ru.otus.cryptomvisample.coins.data.CoinsRepository
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptosample.coins.feature.CoinListFragment
+import ru.otus.cryptomvisample.coins.feature.CoinListFragment
 
 @FeatureScope
 @Component(dependencies = [CoinListComponentDependencies::class])

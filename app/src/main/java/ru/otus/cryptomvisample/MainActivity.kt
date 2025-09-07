@@ -1,11 +1,11 @@
-package ru.otus.cryptosample
+package ru.otus.cryptomvisample
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import ru.otus.cryptosample.databinding.ActivityMainBinding
+import ru.otus.cryptomvisample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

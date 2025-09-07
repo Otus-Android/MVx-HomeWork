@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.feature.adapter
+package ru.otus.cryptomvisample.coins.feature.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,11 +6,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import ru.otus.cryptosample.coins.feature.CoinCategoryState
-import ru.otus.cryptosample.coins.feature.CoinState
-import ru.otus.cryptosample.databinding.ItemCategoryHeaderBinding
-import ru.otus.cryptosample.databinding.ItemCoinBinding
-import ru.otus.cryptosample.databinding.ItemHorizontalCoinListBinding
+import ru.otus.cryptomvisample.coins.feature.CoinCategoryState
+import ru.otus.cryptomvisample.coins.feature.CoinState
+import ru.otus.cryptomvisample.databinding.ItemCategoryHeaderBinding
+import ru.otus.cryptomvisample.databinding.ItemCoinBinding
+import ru.otus.cryptomvisample.databinding.ItemHorizontalCoinListBinding
 
 class CoinsAdapter : ListAdapter<CoinsAdapterItem, RecyclerView.ViewHolder>(CoinsAdapterDiffCallback()) {
 

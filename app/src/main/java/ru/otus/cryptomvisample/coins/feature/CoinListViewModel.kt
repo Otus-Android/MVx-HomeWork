@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.feature
+package ru.otus.cryptomvisample.coins.feature
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
-import ru.otus.cryptosample.coins.domain.ConsumeCoinsUseCase
+import ru.otus.cryptomvisample.coins.domain.ConsumeCoinsUseCase
 
 class CoinListViewModel(
     private val consumeCoinsUseCase: ConsumeCoinsUseCase,

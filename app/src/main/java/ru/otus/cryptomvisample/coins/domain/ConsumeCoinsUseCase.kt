@@ -1,8 +1,8 @@
-package ru.otus.cryptosample.coins.domain
+package ru.otus.cryptomvisample.coins.domain
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import ru.otus.cryptosample.coins.data.CoinsRepository
+import ru.otus.cryptomvisample.coins.data.CoinsRepository
 import javax.inject.Inject
 
 class ConsumeCoinsUseCase @Inject constructor(

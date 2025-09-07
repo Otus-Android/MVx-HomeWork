@@ -1,10 +1,10 @@
-package ru.otus.cryptosample.coins.feature
+package ru.otus.cryptomvisample.coins.feature
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptosample.coins.domain.ConsumeCoinsUseCase
+import ru.otus.cryptomvisample.coins.domain.ConsumeCoinsUseCase
 import javax.inject.Inject
 
 @FeatureScope

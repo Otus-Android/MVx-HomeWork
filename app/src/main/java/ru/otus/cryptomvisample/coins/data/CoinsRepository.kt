@@ -1,4 +1,4 @@
-package ru.otus.cryptosample.coins.data
+package ru.otus.cryptomvisample.coins.data
 
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

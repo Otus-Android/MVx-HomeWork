@@ -1,6 +1,6 @@
-package ru.otus.cryptosample.coins.feature.adapter
+package ru.otus.cryptomvisample.coins.feature.adapter
 
-import ru.otus.cryptosample.coins.feature.CoinState
+import ru.otus.cryptomvisample.coins.feature.CoinState
 
 sealed class CoinsAdapterItem {
     data class CategoryHeader(val categoryName: String) : CoinsAdapterItem()

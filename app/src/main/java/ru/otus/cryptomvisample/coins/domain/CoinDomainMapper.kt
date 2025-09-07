@@ -1,6 +1,6 @@
-package ru.otus.cryptosample.coins.domain
+package ru.otus.cryptomvisample.coins.domain
 
-import ru.otus.cryptosample.coins.data.CoinEntity
+import ru.otus.cryptomvisample.coins.data.CoinEntity
 import javax.inject.Inject
 
 class CoinDomainMapper @Inject constructor() {

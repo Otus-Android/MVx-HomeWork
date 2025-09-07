@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import ru.otus.cryptosample.databinding.FragmentMainBinding
+import ru.otus.cryptomvisample.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
 

@@ -1,8 +1,8 @@
-package ru.otus.cryptosample.coins.feature
+package ru.otus.cryptomvisample.coins.feature
 
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptosample.coins.domain.Coin
-import ru.otus.cryptosample.coins.domain.CoinCategory
+import ru.otus.cryptomvisample.coins.domain.Coin
+import ru.otus.cryptomvisample.coins.domain.CoinCategory
 import javax.inject.Inject
 import java.text.DecimalFormat
 import kotlin.math.abs
