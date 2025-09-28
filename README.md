@@ -6,6 +6,9 @@
 
 Проект представляет собой приложение для отображения криптовалют с возможностью добавления монет в избранное. Текущая реализация использует архитектуру MVVM с `ViewModel` и `StateFlow`.
 
+<img width="200" src="https://github.com/user-attachments/assets/c56619f9-e39a-44de-9ac8-4364a5e9988c" />
+<img width="200" src="https://github.com/user-attachments/assets/23a9d4d4-5837-4ac2-9307-72cd26511bee" />
+
 ### Текущая архитектура (MVVM)
 
 *   **ViewModel**: `CoinListViewModel`, `FavoriteViewModel` управляют состоянием экранов
