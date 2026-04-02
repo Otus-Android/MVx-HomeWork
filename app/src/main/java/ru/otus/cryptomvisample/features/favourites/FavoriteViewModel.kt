@@ -8,6 +8,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
+import org.orbitmvi.orbit.ContainerHost
+import org.orbitmvi.orbit.viewmodel.container
 import ru.otus.cryptomvisample.common.domain_api.ConsumeFavoriteCoinsUseCase
 import ru.otus.cryptomvisample.common.domain_api.UnsetFavouriteCoinUseCase
 
@@ -16,29 +18,27 @@ class FavoriteViewModel(
     private val consumeFavoriteCoinsUseCase: ConsumeFavoriteCoinsUseCase,
     private val mapper: FavoriteStateMapper,
     private val unsetFavouriteCoinUseCase: UnsetFavouriteCoinUseCase,
-) : ViewModel() {
+) : ViewModel(), ContainerHost<FavoriteCoinsScreenState, Nothing> {
 
-    private val _state = MutableStateFlow(FavoriteCoinsScreenState())
-    val state: StateFlow<FavoriteCoinsScreenState> = _state.asStateFlow()
-
-    init {
+    override val container = container<FavoriteCoinsScreenState, Nothing>(
+        FavoriteCoinsScreenState()
+    ) {
         loadFavoriteCoins()
     }
 
-    fun removeFavourite(coinId: String) {
+    fun removeFavourite(coinId: String) = intent {
         unsetFavouriteCoinUseCase(coinId)
     }
 
-    private fun loadFavoriteCoins() {
+    private fun loadFavoriteCoins() = intent {
         consumeFavoriteCoinsUseCase()
             .map { favoriteCoins ->
-                favoriteCoins.map { coin ->
-                    mapper.mapToState(coin)
+                favoriteCoins.map { mapper.mapToState(coin = it) }
+            }
+            .collect { favoriteCoinsState ->
+                reduce {
+                    state.copy(favoriteCoins = favoriteCoinsState)
                 }
             }
-            .onEach { favoriteCoinsState ->
-                _state.value = _state.value.copy(favoriteCoins = favoriteCoinsState)
-            }
-            .launchIn(viewModelScope)
     }
 }
