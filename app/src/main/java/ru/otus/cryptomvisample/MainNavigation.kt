@@ -1,5 +1,6 @@
 package ru.otus.cryptomvisample
 
+import android.widget.Toast
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
@@ -22,7 +23,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import org.orbitmvi.orbit.compose.collectAsState
+import org.orbitmvi.orbit.compose.collectSideEffect
 import ru.otus.common.di.findDependencies
+import ru.otus.cryptomvisample.features.coins.CoinListSideEffect
 import ru.otus.cryptomvisample.features.coins.CoinListViewModel
 import ru.otus.cryptomvisample.features.coins.di.CoinListDependencies
 import ru.otus.cryptomvisample.features.coins.di.DaggerCoinListComponent
@@ -85,10 +89,20 @@ fun MainNavigation() {
 
 @Composable
 fun CoinListScreenContent() {
-    val dependencies = LocalContext.current.findDependencies<CoinListDependencies>()
+    val context = LocalContext.current
+    val dependencies = context.findDependencies<CoinListDependencies>()
     val component = DaggerCoinListComponent.factory().create(dependencies)
     val viewModel: CoinListViewModel = viewModel(factory = component.viewModelFactory())
-    val state by viewModel.state.collectAsState()
+    val state by viewModel.collectAsState()
+
+    viewModel.collectSideEffect { effect ->
+        when (effect) {
+            is CoinListSideEffect.ShowError -> {
+                Toast.makeText(context, effect.message, Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
     CoinListScreen(
         state = state,
         onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
@@ -101,7 +115,7 @@ fun FavoriteCoinsScreenContent() {
     val dependencies = LocalContext.current.findDependencies<FavouritesDependencies>()
     val component = DaggerFavouritesComponent.factory().create(dependencies)
     val viewModel: FavoriteViewModel = viewModel(factory = component.viewModelFactory())
-    val state by viewModel.state.collectAsState()
+    val state by viewModel.collectAsState()
 
     FavoriteCoinsScreen(
         favoriteCoins = state.favoriteCoins,

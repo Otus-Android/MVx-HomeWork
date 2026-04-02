@@ -1,6 +1,6 @@
 package ru.otus.cryptomvisample.features.coins
 
-data class CoinsScreenState(
+data class  CoinsScreenState(
     val categories: List<CoinCategoryState> = emptyList(),
     val highlightMovers: Boolean = false,
 )

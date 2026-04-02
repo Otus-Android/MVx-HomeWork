@@ -10,6 +10,9 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
+import org.orbitmvi.orbit.ContainerHost
+import org.orbitmvi.orbit.syntax.Syntax
+import org.orbitmvi.orbit.viewmodel.container
 import ru.otus.cryptomvisample.common.domain_api.ConsumeCoinsUseCase
 import ru.otus.cryptomvisample.common.domain_api.SetFavouriteCoinUseCase
 import ru.otus.cryptomvisample.common.domain_api.UnsetFavouriteCoinUseCase
@@ -19,25 +22,27 @@ class CoinListViewModel(
     private val coinsStateFactory: CoinsStateFactory,
     private val setFavouriteCoinUseCase: SetFavouriteCoinUseCase,
     private val unsetFavouriteCoinUseCase: UnsetFavouriteCoinUseCase,
-) : ViewModel() {
+) : ViewModel(), ContainerHost<CoinsScreenState, CoinListSideEffect> {
 
-    private val _state = MutableStateFlow(CoinsScreenState())
-    val state: StateFlow<CoinsScreenState> = _state.asStateFlow()
+    override val container = container<CoinsScreenState, CoinListSideEffect>(CoinsScreenState()) {
+        requestCoins()
+    }
 
     private var fullCategories: List<CoinCategoryState> = emptyList()
     private var highlightMovers = false
 
-    init {
-        requestCoins()
+    fun onHighlightMoversToggled(isChecked: Boolean) = intent {
+        reduce {
+            state.copy(
+                highlightMovers = isChecked,
+                // Пересчитываем категории сразу при обновлении стейта
+                categories = updateHighlight(state.categories, isChecked)
+            )
+        }
     }
 
-    fun onHighlightMoversToggled(isChecked: Boolean) {
-        highlightMovers = isChecked
-        updateUiState()
-    }
-
-    fun onToggleFavourite(coinId: String) {
-        val isCurrentlyFavorite = fullCategories.any { category ->
+    fun onToggleFavourite(coinId: String) = intent {
+        val isCurrentlyFavorite = state.categories.any { category ->
             category.coins.any { coin -> coin.id == coinId && coin.isFavourite }
         }
         
@@ -48,36 +53,31 @@ class CoinListViewModel(
         }
     }
 
-    private fun requestCoins() {
+    private suspend fun Syntax<CoinsScreenState, CoinListSideEffect>.requestCoins() {
         consumeCoinsUseCase()
             .map { categories ->
                 categories.map { category -> coinsStateFactory.create(category) }
             }
-            .onEach { categoryListState ->
-                fullCategories = categoryListState
-                updateUiState()
-            }
             .catch {
-                fullCategories = emptyList()
-                updateUiState()
+                postSideEffect(CoinListSideEffect.ShowError(it.message ?: "Ошибка загрузки данных"))
             }
-            .launchIn(viewModelScope)
+            .collect { categoryListState ->
+                reduce {
+                    state.copy(
+                        categories = updateHighlight(categoryListState, state.highlightMovers)
+                    )
+                }
+            }
     }
 
-    private fun updateUiState() {
-        val processedCategories = fullCategories.map { category ->
+    private fun updateHighlight(
+        categories: List<CoinCategoryState>,
+        highlight: Boolean
+    ): List<CoinCategoryState> {
+        return categories.map { category ->
             category.copy(coins = category.coins.map { coin ->
-                coin.copy(
-                    highlight = highlightMovers && coin.isHotMover
-                )
+                coin.copy(highlight = highlight && coin.isHotMover)
             })
-        }
-
-        _state.update { 
-            it.copy(
-                categories = processedCategories,
-                highlightMovers = highlightMovers
-            )
         }
     }
 }
