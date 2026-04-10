@@ -84,4 +84,8 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.androidx.test.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation("com.arkivanov.mvikotlin:mvikotlin:3.3.0")
+    implementation("com.arkivanov.mvikotlin:mvikotlin-main:3.3.0")
+    implementation("com.arkivanov.mvikotlin:mvikotlin-extensions-coroutines:3.3.0")
 }
