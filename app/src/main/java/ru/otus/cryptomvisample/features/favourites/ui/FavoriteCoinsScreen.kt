@@ -14,12 +14,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import ru.otus.cryptomvisample.features.favourites.FavouriteCoinState
+import ru.otus.cryptomvisample.features.favourites.UiFavouriteCoin
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun FavoriteCoinsScreen(
-    favoriteCoins: List<FavouriteCoinState>,
+    favoriteCoins: List<UiFavouriteCoin>,
     onToggleFavourite: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {

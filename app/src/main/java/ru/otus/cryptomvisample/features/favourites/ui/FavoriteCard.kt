@@ -26,7 +26,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import ru.otus.cryptomvisample.features.favourites.FavouriteCoinState
+import ru.otus.cryptomvisample.features.favourites.UiFavouriteCoin
 import ru.otus.cryptomvisample.ui.theme.CryptomvisampleTheme
 import ru.otus.cryptomvisample.ui.theme.GreenUp
 import ru.otus.cryptomvisample.ui.theme.RedDown
@@ -35,7 +35,7 @@ import ru.otus.cryptomvisample.ui.theme.TextSecondary
 
 @Composable
 fun FavoriteCard(
-    favouriteCoin: FavouriteCoinState,
+    favouriteCoin: UiFavouriteCoin,
     modifier: Modifier = Modifier,
     onToggleFavourite: (() -> Unit) = {}
 ) {
@@ -120,7 +120,7 @@ fun FavoriteCard(
 fun FavoriteCardPreview() {
     CryptomvisampleTheme {
         FavoriteCard(
-            favouriteCoin = FavouriteCoinState(
+            favouriteCoin = UiFavouriteCoin(
                 id = "btc",
                 name = "Bitcoin",
                 image = "android.resource://ru.otus.cryptomvisample/drawable/btc",

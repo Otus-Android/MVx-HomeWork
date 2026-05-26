@@ -24,9 +24,11 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import ru.otus.common.di.findDependencies
 import ru.otus.cryptomvisample.features.coins.CoinListViewModel
+import ru.otus.cryptomvisample.features.coins.CoinsListContract
 import ru.otus.cryptomvisample.features.coins.di.CoinListDependencies
 import ru.otus.cryptomvisample.features.coins.di.DaggerCoinListComponent
 import ru.otus.cryptomvisample.features.coins.ui.CoinListScreen
+import ru.otus.cryptomvisample.features.favourites.FavoriteContract
 import ru.otus.cryptomvisample.features.favourites.FavoriteViewModel
 import ru.otus.cryptomvisample.features.favourites.di.DaggerFavouritesComponent
 import ru.otus.cryptomvisample.features.favourites.di.FavouritesDependencies
@@ -91,8 +93,8 @@ fun CoinListScreenContent() {
     val state by viewModel.state.collectAsState()
     CoinListScreen(
         state = state,
-        onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
-        onToggleFavourite = viewModel::onToggleFavourite
+        onHighlightMoversToggled = { isToggled -> viewModel.reduce(CoinsListContract.Intent.OnHighlightMoversToggled(isToggled))},
+        onToggleFavourite = { isFavorite -> viewModel.reduce(CoinsListContract.Intent.OnToggleFavourite(isFavorite))}
     )
 }
 
@@ -104,7 +106,7 @@ fun FavoriteCoinsScreenContent() {
     val state by viewModel.state.collectAsState()
 
     FavoriteCoinsScreen(
-        favoriteCoins = state.favoriteCoins,
-        onToggleFavourite = viewModel::removeFavourite
+        favoriteCoins = state.coins,
+        onToggleFavourite = { id -> viewModel.reduce(FavoriteContract.Intent.RemoveFavoriteCoin(id)) }
     )
 }

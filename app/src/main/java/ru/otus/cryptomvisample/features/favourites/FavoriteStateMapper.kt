@@ -11,8 +11,8 @@ class FavoriteStateMapper @Inject constructor(
     private val priceFormatter: PriceFormatter,
     private val changeFormatter: ChangeFormatter,
 ) {
-    fun mapToState(coin: Coin): FavouriteCoinState {
-        return FavouriteCoinState(
+    fun mapToState(coin: Coin): UiFavouriteCoin {
+        return UiFavouriteCoin(
             id = coin.id,
             name = coin.name,
             image = coin.iconPath,

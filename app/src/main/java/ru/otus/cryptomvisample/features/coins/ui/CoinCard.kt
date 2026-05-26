@@ -30,7 +30,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import ru.otus.cryptomvisample.features.coins.CoinState
+import ru.otus.cryptomvisample.features.coins.UiCoinState
 import ru.otus.cryptomvisample.ui.theme.CryptomvisampleTheme
 import ru.otus.cryptomvisample.ui.theme.GreenUp
 import ru.otus.cryptomvisample.ui.theme.RedDown
@@ -39,7 +39,7 @@ import ru.otus.cryptomvisample.ui.theme.TextSecondary
 
 @Composable
 fun CoinCard(
-    coin: CoinState,
+    coin: UiCoinState,
     modifier: Modifier = Modifier,
     onToggleFavourite: (() -> Unit)? = null
 ) {
@@ -134,7 +134,7 @@ fun CoinCard(
 fun CoinCardPreview() {
     CryptomvisampleTheme {
         CoinCard(
-            coin = CoinState(
+            coin = UiCoinState(
                 id = "btc",
                 name = "Bitcoin",
                 image = "android.resource://ru.otus.cryptomvisample/drawable/btc",

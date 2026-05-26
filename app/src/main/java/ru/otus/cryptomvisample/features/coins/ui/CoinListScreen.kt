@@ -24,12 +24,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import ru.otus.cryptomvisample.features.coins.CoinsScreenState
+import ru.otus.cryptomvisample.features.coins.CoinsListContract
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun CoinListScreen(
-    state: CoinsScreenState,
+    state: CoinsListContract.State,
     onHighlightMoversToggled: (Boolean) -> Unit,
     onToggleFavourite: (String) -> Unit,
     modifier: Modifier = Modifier
