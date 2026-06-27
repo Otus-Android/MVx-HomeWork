@@ -23,6 +23,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import ru.otus.common.di.findDependencies
+import ru.otus.cryptomvisample.features.coins.Action
+import ru.otus.cryptomvisample.features.favourites.Action as FavouritesActions
 import ru.otus.cryptomvisample.features.coins.CoinListViewModel
 import ru.otus.cryptomvisample.features.coins.di.CoinListDependencies
 import ru.otus.cryptomvisample.features.coins.di.DaggerCoinListComponent
@@ -91,8 +93,10 @@ fun CoinListScreenContent() {
     val state by viewModel.state.collectAsState()
     CoinListScreen(
         state = state,
-        onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
-        onToggleFavourite = viewModel::onToggleFavourite
+        onHighlightMoversToggled = { isToggled ->
+            viewModel.sendAction(Action.HighlightMoversClick(isToggled))},
+        onToggleFavourite = { id ->
+            viewModel.sendAction(Action.AddToFavorite(id))}
     )
 }
 
@@ -105,6 +109,9 @@ fun FavoriteCoinsScreenContent() {
 
     FavoriteCoinsScreen(
         favoriteCoins = state.favoriteCoins,
-        onToggleFavourite = viewModel::removeFavourite
+        onToggleFavourite =
+            { id ->
+                viewModel.sendAction(FavouritesActions.RemoveFromFavourites(id))
+            }
     )
 }
