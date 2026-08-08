@@ -10,6 +10,15 @@ android {
     namespace 'ru.otus.cryptomvisample'
     compileSdk 36
 
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlin {
+        jvmToolchain(17)
+    }
+
     defaultConfig {
         applicationId "ru.otus.cryptomvisample"
         minSdk 24
