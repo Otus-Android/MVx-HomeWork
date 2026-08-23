@@ -20,20 +20,22 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import ru.otus.cryptomvisample.features.coins.CoinsScreenState
+import ru.otus.cryptomvisample.features.coins.CoinComponent
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun CoinListScreen(
-    state: CoinsScreenState,
-    onHighlightMoversToggled: (Boolean) -> Unit,
-    onToggleFavourite: (String) -> Unit,
+    component: CoinComponent,
     modifier: Modifier = Modifier
 ) {
+    val state by component.model.collectAsState()
+
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -56,7 +58,7 @@ fun CoinListScreen(
             )
 
             FilterChip(
-                onClick = { onHighlightMoversToggled(!state.highlightMovers) },
+                onClick = { component.onHighlightMoversToggled(!state.highlightMovers) },
                 label = {
                     Text(
                         text = "Highlight Movers",
@@ -98,7 +100,7 @@ fun CoinListScreen(
                     item(span = { GridItemSpan(2) }) {
                         HorizontalCoinList(
                             coins = category.coins,
-                            onToggleFavourite = onToggleFavourite
+                            onToggleFavourite = component::onToggleFavourite
                         )
                     }
                 } else {
@@ -114,7 +116,7 @@ fun CoinListScreen(
                         }
                         CoinCard(
                             coin = coin,
-                            onToggleFavourite = { onToggleFavourite(coin.id) },
+                            onToggleFavourite = { component.onToggleFavourite(coin.id) },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(start = start, end = end)

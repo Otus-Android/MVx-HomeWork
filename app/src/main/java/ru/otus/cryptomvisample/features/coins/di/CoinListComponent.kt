@@ -2,10 +2,13 @@ package ru.otus.cryptomvisample.features.coins.di
 
 import dagger.Component
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptomvisample.features.coins.CoinListViewModelFactory
+import ru.otus.cryptomvisample.features.coins.DefaultCoinComponent
 
 @FeatureScope
-@Component(dependencies = [CoinListDependencies::class])
+@Component(
+    dependencies = [CoinListDependencies::class],
+    modules = [CoinListModule::class],
+)
 interface CoinListComponent {
 
     @Component.Factory
@@ -15,5 +18,5 @@ interface CoinListComponent {
         ): CoinListComponent
     }
 
-    fun viewModelFactory(): CoinListViewModelFactory
+    fun coinComponent(): DefaultCoinComponent
 }
