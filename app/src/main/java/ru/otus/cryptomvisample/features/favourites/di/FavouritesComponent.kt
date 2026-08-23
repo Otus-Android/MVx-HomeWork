@@ -2,10 +2,13 @@ package ru.otus.cryptomvisample.features.favourites.di
 
 import dagger.Component
 import ru.otus.common.di.FeatureScope
-import ru.otus.cryptomvisample.features.favourites.FavoriteViewModelFactory
+import ru.otus.cryptomvisample.features.favourites.DefaultFavoriteComponent
 
 @FeatureScope
-@Component(dependencies = [FavouritesDependencies::class])
+@Component(
+    dependencies = [FavouritesDependencies::class],
+    modules = [FavouritesModule::class],
+)
 interface FavouritesComponent {
 
     @Component.Factory
@@ -15,5 +18,5 @@ interface FavouritesComponent {
         ): FavouritesComponent
     }
 
-    fun viewModelFactory(): FavoriteViewModelFactory
+    fun favoriteComponent(): DefaultFavoriteComponent
 }

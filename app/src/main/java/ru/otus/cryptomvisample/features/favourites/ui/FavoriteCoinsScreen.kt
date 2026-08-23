@@ -10,19 +10,22 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import ru.otus.cryptomvisample.features.favourites.FavouriteCoinState
+import ru.otus.cryptomvisample.features.favourites.FavoriteComponent
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun FavoriteCoinsScreen(
-    favoriteCoins: List<FavouriteCoinState>,
-    onToggleFavourite: (String) -> Unit,
+    component: FavoriteComponent,
     modifier: Modifier = Modifier
 ) {
+    val state by component.model.collectAsState()
+
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -36,7 +39,7 @@ fun FavoriteCoinsScreen(
             )
         )
 
-        if (favoriteCoins.isEmpty()) {
+        if (state.favoriteCoins.isEmpty()) {
             Column(
                 modifier = Modifier
                     .fillMaxSize()
@@ -59,10 +62,13 @@ fun FavoriteCoinsScreen(
             LazyColumn(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                items(favoriteCoins) { coin ->
+                items(
+                    items = state.favoriteCoins,
+                    key = { coin -> coin.id }
+                ) { coin ->
                     FavoriteCard(
                         favouriteCoin = coin,
-                        onToggleFavourite = { onToggleFavourite(coin.id) },
+                        onToggleFavourite = { component.onRemoveFavourite(coin.id) },
                         modifier = Modifier.fillMaxWidth()
                     )
                 }

@@ -10,11 +10,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import ru.otus.cryptomvisample.features.coins.CoinState
+import ru.otus.cryptomvisample.features.coins.CoinStore
 
 @Composable
 fun HorizontalCoinList(
-    coins: List<CoinState>,
+    coins: List<CoinStore.State.CoinItem>,
     onToggleFavourite: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {

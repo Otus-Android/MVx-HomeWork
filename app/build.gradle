@@ -61,6 +61,10 @@ dependencies {
     implementation libs.androidx.datastore
     implementation libs.androidx.datastore.preferences
 
+    implementation(libs.com.arkivanov.mvikotlin)
+    implementation(libs.com.arkivanov.mvikotlin.main)
+    implementation(libs.com.arkivanov.mvikotlin.extcoroutines)
+
     // Compose BOM
     implementation platform(libs.compose.bom)
     implementation libs.activity.compose
