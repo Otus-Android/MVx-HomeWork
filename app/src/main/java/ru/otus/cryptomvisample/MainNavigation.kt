@@ -91,8 +91,7 @@ fun CoinListScreenContent() {
     val state by viewModel.state.collectAsState()
     CoinListScreen(
         state = state,
-        onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
-        onToggleFavourite = viewModel::onToggleFavourite
+        onIntent = viewModel::accept,
     )
 }
 
@@ -105,6 +104,6 @@ fun FavoriteCoinsScreenContent() {
 
     FavoriteCoinsScreen(
         favoriteCoins = state.favoriteCoins,
-        onToggleFavourite = viewModel::removeFavourite
+        onIntent = viewModel::accept,
     )
 }

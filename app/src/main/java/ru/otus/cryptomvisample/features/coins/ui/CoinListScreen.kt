@@ -24,14 +24,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import ru.otus.cryptomvisample.features.coins.CoinListStore
 import ru.otus.cryptomvisample.features.coins.CoinsScreenState
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun CoinListScreen(
     state: CoinsScreenState,
-    onHighlightMoversToggled: (Boolean) -> Unit,
-    onToggleFavourite: (String) -> Unit,
+    onIntent: (CoinListStore.Intent) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -56,7 +56,11 @@ fun CoinListScreen(
             )
 
             FilterChip(
-                onClick = { onHighlightMoversToggled(!state.highlightMovers) },
+                onClick = {
+                    onIntent(
+                        CoinListStore.Intent.HighlightMoversToggled(!state.highlightMovers)
+                    )
+                },
                 label = {
                     Text(
                         text = "Highlight Movers",
@@ -98,7 +102,9 @@ fun CoinListScreen(
                     item(span = { GridItemSpan(2) }) {
                         HorizontalCoinList(
                             coins = category.coins,
-                            onToggleFavourite = onToggleFavourite
+                            onToggleFavourite = { coinId ->
+                                onIntent(CoinListStore.Intent.FavouriteToggled(coinId))
+                            }
                         )
                     }
                 } else {
@@ -114,7 +120,9 @@ fun CoinListScreen(
                         }
                         CoinCard(
                             coin = coin,
-                            onToggleFavourite = { onToggleFavourite(coin.id) },
+                            onToggleFavourite = {
+                                onIntent(CoinListStore.Intent.FavouriteToggled(coin.id))
+                            },
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .padding(start = start, end = end)
