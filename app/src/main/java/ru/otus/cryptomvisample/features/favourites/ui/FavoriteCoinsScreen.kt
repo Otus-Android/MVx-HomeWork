@@ -15,12 +15,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import ru.otus.cryptomvisample.features.favourites.FavouriteCoinState
+import ru.otus.cryptomvisample.features.favourites.FavoriteStore
 import ru.otus.cryptomvisample.ui.theme.TextPrimary
 
 @Composable
 fun FavoriteCoinsScreen(
     favoriteCoins: List<FavouriteCoinState>,
-    onToggleFavourite: (String) -> Unit,
+    onIntent: (FavoriteStore.Intent) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(
@@ -62,7 +63,9 @@ fun FavoriteCoinsScreen(
                 items(favoriteCoins) { coin ->
                     FavoriteCard(
                         favouriteCoin = coin,
-                        onToggleFavourite = { onToggleFavourite(coin.id) },
+                        onToggleFavourite = {
+                            onIntent(FavoriteStore.Intent.FavouriteRemoved(coin.id))
+                        },
                         modifier = Modifier.fillMaxWidth()
                     )
                 }

@@ -51,6 +51,9 @@ dependencies {
     implementation libs.lifecycle.viewmodel.ktx
     implementation libs.fragment.ktx
     implementation libs.lifecycle.runtime.ktx
+    implementation libs.mvikotlin.main
+    implementation libs.mvikotlin
+    implementation libs.mvikotlin.extensions.coroutines
     implementation libs.navigation.fragment.ktx
     implementation libs.navigation.ui.ktx
     implementation libs.coil
