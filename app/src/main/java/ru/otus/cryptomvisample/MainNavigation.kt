@@ -10,6 +10,7 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -23,10 +24,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import ru.otus.common.di.findDependencies
+import ru.otus.cryptomvisample.features.coins.CoinAction
 import ru.otus.cryptomvisample.features.coins.CoinListViewModel
 import ru.otus.cryptomvisample.features.coins.di.CoinListDependencies
 import ru.otus.cryptomvisample.features.coins.di.DaggerCoinListComponent
 import ru.otus.cryptomvisample.features.coins.ui.CoinListScreen
+import ru.otus.cryptomvisample.features.favourites.FavoriteAction
 import ru.otus.cryptomvisample.features.favourites.FavoriteViewModel
 import ru.otus.cryptomvisample.features.favourites.di.DaggerFavouritesComponent
 import ru.otus.cryptomvisample.features.favourites.di.FavouritesDependencies
@@ -89,10 +92,19 @@ fun CoinListScreenContent() {
     val component = DaggerCoinListComponent.factory().create(dependencies)
     val viewModel: CoinListViewModel = viewModel(factory = component.viewModelFactory())
     val state by viewModel.state.collectAsState()
+
+    LaunchedEffect(Unit) {
+        viewModel.sendAction(CoinAction.FeatureStarted)
+    }
+
     CoinListScreen(
         state = state,
-        onHighlightMoversToggled = viewModel::onHighlightMoversToggled,
-        onToggleFavourite = viewModel::onToggleFavourite
+        onHighlightMoversToggled = {
+            viewModel.sendAction(CoinAction.HighlightMoversToggled(it))
+        },
+        onToggleFavourite = {
+            viewModel.sendAction(CoinAction.ToggleFavourite(it))
+        }
     )
 }
 
@@ -103,8 +115,14 @@ fun FavoriteCoinsScreenContent() {
     val viewModel: FavoriteViewModel = viewModel(factory = component.viewModelFactory())
     val state by viewModel.state.collectAsState()
 
+    LaunchedEffect(Unit) {
+        viewModel.sendAction(FavoriteAction.FeatureStarted)
+    }
+
     FavoriteCoinsScreen(
         favoriteCoins = state.favoriteCoins,
-        onToggleFavourite = viewModel::removeFavourite
+        onToggleFavourite = {
+            viewModel.sendAction(FavoriteAction.RemoveFavourite(it))
+        }
     )
 }

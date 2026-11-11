@@ -2,6 +2,7 @@ package ru.otus.cryptomvisample.features.favourites
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -11,6 +12,8 @@ import kotlinx.coroutines.flow.onEach
 import ru.otus.cryptomvisample.common.domain_api.ConsumeFavoriteCoinsUseCase
 import ru.otus.cryptomvisample.common.domain_api.UnsetFavouriteCoinUseCase
 
+private typealias Dispatcher = suspend (FavoriteAction) -> Unit
+private typealias Reducer = (FavoriteCoinsScreenState, FavoriteChange) -> FavoriteCoinsScreenState
 
 class FavoriteViewModel(
     private val consumeFavoriteCoinsUseCase: ConsumeFavoriteCoinsUseCase,
@@ -21,24 +24,58 @@ class FavoriteViewModel(
     private val _state = MutableStateFlow(FavoriteCoinsScreenState())
     val state: StateFlow<FavoriteCoinsScreenState> = _state.asStateFlow()
 
+    private val _actions = MutableSharedFlow<FavoriteAction>(
+        extraBufferCapacity = 1
+    )
+
+    private val _changes = MutableSharedFlow<FavoriteChange>()
+
     init {
-        loadFavoriteCoins()
+        bind()
     }
 
-    fun removeFavourite(coinId: String) {
-        unsetFavouriteCoinUseCase(coinId)
+    fun sendAction(action: FavoriteAction) {
+        _actions.tryEmit(action)
     }
 
-    private fun loadFavoriteCoins() {
-        consumeFavoriteCoinsUseCase()
-            .map { favoriteCoins ->
-                favoriteCoins.map { coin ->
-                    mapper.mapToState(coin)
-                }
+    private fun bind() {
+        _actions.onEach { action ->
+            dispatcher(action)
+        }.launchIn(viewModelScope)
+
+        _changes.onEach { change ->
+            _state.value = reducer(state.value, change)
+        }.launchIn(viewModelScope)
+    }
+
+    private val dispatcher: Dispatcher = { action ->
+        when (action) {
+            is FavoriteAction.FeatureStarted -> {
+                consumeFavoriteCoinsUseCase()
+                    .map { favoriteCoins ->
+                        favoriteCoins.map { coin ->
+                            mapper.mapToState(coin)
+                        }
+                    }
+                    .onEach { favoriteCoinsState ->
+                        _changes.emit(
+                            FavoriteChange.FavoriteCoinsLoaded(favoriteCoinsState)
+                        )
+                    }
+                    .launchIn(viewModelScope)
             }
-            .onEach { favoriteCoinsState ->
-                _state.value = _state.value.copy(favoriteCoins = favoriteCoinsState)
+
+            is FavoriteAction.RemoveFavourite -> {
+                unsetFavouriteCoinUseCase(action.coinId)
             }
-            .launchIn(viewModelScope)
+        }
+    }
+
+    private val reducer: Reducer = { state, change ->
+        when (change) {
+            is FavoriteChange.FavoriteCoinsLoaded -> state.copy(
+                favoriteCoins = change.favoriteCoins
+            )
+        }
     }
 }
