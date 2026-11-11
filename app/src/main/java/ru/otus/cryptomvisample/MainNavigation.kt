@@ -29,6 +29,7 @@ import ru.otus.cryptomvisample.features.coins.CoinListViewModel
 import ru.otus.cryptomvisample.features.coins.di.CoinListDependencies
 import ru.otus.cryptomvisample.features.coins.di.DaggerCoinListComponent
 import ru.otus.cryptomvisample.features.coins.ui.CoinListScreen
+import ru.otus.cryptomvisample.features.favourites.FavoriteAction
 import ru.otus.cryptomvisample.features.favourites.FavoriteViewModel
 import ru.otus.cryptomvisample.features.favourites.di.DaggerFavouritesComponent
 import ru.otus.cryptomvisample.features.favourites.di.FavouritesDependencies
@@ -114,8 +115,14 @@ fun FavoriteCoinsScreenContent() {
     val viewModel: FavoriteViewModel = viewModel(factory = component.viewModelFactory())
     val state by viewModel.state.collectAsState()
 
+    LaunchedEffect(Unit) {
+        viewModel.sendAction(FavoriteAction.FeatureStarted)
+    }
+
     FavoriteCoinsScreen(
         favoriteCoins = state.favoriteCoins,
-        onToggleFavourite = viewModel::removeFavourite
+        onToggleFavourite = {
+            viewModel.sendAction(FavoriteAction.RemoveFavourite(it))
+        }
     )
 }
