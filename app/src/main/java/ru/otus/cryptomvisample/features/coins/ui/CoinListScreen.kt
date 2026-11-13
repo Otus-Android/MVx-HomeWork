@@ -88,16 +88,23 @@ fun CoinListScreen(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             state.categories.forEach { category ->
-                item(span = { GridItemSpan(2) }) {
+                item(
+                    key = "header_${category.id}",
+                    span = { GridItemSpan(2) }
+                ) {
                     CategoryHeader(
                         title = category.name,
                         modifier = Modifier.padding(horizontal = 16.dp)
                     )
                 }
                 if (category.coins.size >= 10) {
-                    item(span = { GridItemSpan(2) }) {
+                    item(
+                        key = "row_${category.id}",
+                        span = { GridItemSpan(2) }
+                    ) {
                         HorizontalCoinList(
                             coins = category.coins,
+                            highlightMovers = state.highlightMovers,
                             onToggleFavourite = onToggleFavourite
                         )
                     }
@@ -105,7 +112,7 @@ fun CoinListScreen(
                     itemsIndexed(
                         items = category.coins,
                         span = { index, coin -> GridItemSpan(1) },
-                        key = { index, coin -> coin.id }
+                        key = { index, coin -> "${category.id}_${coin.id}" }
                     ) { index, coin ->
                         val (start, end) = if (index % 2 == 0) {
                             16.dp to 0.dp
@@ -114,6 +121,7 @@ fun CoinListScreen(
                         }
                         CoinCard(
                             coin = coin,
+                            highlight = state.highlightMovers && coin.isHotMover,
                             onToggleFavourite = { onToggleFavourite(coin.id) },
                             modifier = Modifier
                                 .fillMaxWidth()

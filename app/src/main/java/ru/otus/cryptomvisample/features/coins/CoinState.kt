@@ -20,5 +20,4 @@ data class CoinState(
     val priceChange: String,
     val isHotMover: Boolean,
     val isFavourite: Boolean,
-    val highlight: Boolean = false,
 )

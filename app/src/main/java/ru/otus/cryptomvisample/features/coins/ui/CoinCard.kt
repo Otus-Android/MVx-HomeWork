@@ -41,6 +41,7 @@ import ru.otus.cryptomvisample.ui.theme.TextSecondary
 fun CoinCard(
     coin: CoinState,
     modifier: Modifier = Modifier,
+    highlight: Boolean = false,
     onToggleFavourite: (() -> Unit)? = null
 ) {
     Card(
@@ -73,7 +74,7 @@ fun CoinCard(
                         contentScale = ContentScale.Crop
                     )
                     
-                    if (coin.highlight) {
+                    if (highlight) {
                         Spacer(modifier = Modifier.width(4.dp))
                         Text(
                             text = "🔥",
@@ -142,8 +143,7 @@ fun CoinCardPreview() {
                 isPriceGoesUp = true,
                 priceChange = "17.21%",
                 isHotMover = true,
-                isFavourite = true,
-                highlight = true,
+                isFavourite = true
             )
         )
     }

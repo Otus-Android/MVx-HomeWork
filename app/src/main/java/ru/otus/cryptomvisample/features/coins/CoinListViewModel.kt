@@ -2,18 +2,20 @@ package ru.otus.cryptomvisample.features.coins
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
 import ru.otus.cryptomvisample.common.domain_api.ConsumeCoinsUseCase
 import ru.otus.cryptomvisample.common.domain_api.SetFavouriteCoinUseCase
 import ru.otus.cryptomvisample.common.domain_api.UnsetFavouriteCoinUseCase
 
-private typealias Dispatcher = suspend (CoinAction) -> Unit
 private typealias Reducer = (CoinsScreenState, CoinChange) -> CoinsScreenState
 
 class CoinListViewModel(
@@ -26,56 +28,25 @@ class CoinListViewModel(
     private val _state = MutableStateFlow(CoinsScreenState())
     val state: StateFlow<CoinsScreenState> = _state.asStateFlow()
 
-    private val _actions = MutableSharedFlow<CoinAction>(
-        extraBufferCapacity = 1
-    )
-    private val _changes = MutableSharedFlow<CoinChange>()
-
-    private var fullCategories: List<CoinCategoryState> = emptyList()
-
-    init {
-        bind()
-    }
+    private val actions = Channel<CoinAction>(Channel.UNLIMITED)
+    private var coinsJob: Job? = null
 
     fun sendAction(action: CoinAction) {
-        _actions.tryEmit(action)
+        actions.trySend(action)
     }
 
-    private fun bind() {
-        _actions.onEach { action ->
-            dispatcher(action)
-        }.launchIn(viewModelScope)
-
-        _changes.onEach { change ->
-            _state.value = reducer(state.value, change)
-        }.launchIn(viewModelScope)
-    }
-
-    private val dispatcher: Dispatcher = { action ->
+    private fun dispatch(action: CoinAction) {
         when (action) {
-            is CoinAction.FeatureStarted -> {
-                consumeCoinsUseCase()
-                    .map { categories ->
-                        categories.map { category -> coinsStateFactory.create(category) }
-                    }
-                    .onEach { categories ->
-                        fullCategories = categories
-                        _changes.emit(CoinChange.CoinsLoaded(categories))
-                    }
-                    .launchIn(viewModelScope)
-            }
+            is CoinAction.FeatureStarted -> startObservingCoins()
 
             is CoinAction.HighlightMoversToggled -> {
-                _changes.emit(
-                    CoinChange.HighlightMoversChanged(action.isChecked)
-                )
+                applyChange(CoinChange.HighlightMoversChanged(action.isChecked))
             }
 
             is CoinAction.ToggleFavourite -> {
-                val isCurrentlyFavorite = fullCategories.any { category ->
-                    category.coins.any { coin -> coin.id == action.coinId && coin.isFavourite }
+                val isCurrentlyFavorite = _state.value.categories.any { category ->
+                    category.coins.any { it.id == action.coinId && it.isFavourite }
                 }
-
                 if (isCurrentlyFavorite) {
                     unsetFavouriteCoinUseCase(action.coinId)
                 } else {
@@ -85,28 +56,30 @@ class CoinListViewModel(
         }
     }
 
+    private fun startObservingCoins() {
+        if (coinsJob?.isActive == true) return
+
+        coinsJob = consumeCoinsUseCase()
+            .map { categories -> categories.map(coinsStateFactory::create) }
+            .onEach { categories -> applyChange(CoinChange.CoinsLoaded(categories)) }
+            .launchIn(viewModelScope)
+    }
+
+    private fun applyChange(change: CoinChange) {
+        _state.update { current -> reducer(current, change) }
+    }
+
     private val reducer: Reducer = { state, change ->
         when (change) {
-            is CoinChange.HighlightMoversChanged -> state.copy(
-                highlightMovers = change.enabled,
-                categories = fullCategories.map { category ->
-                    category.copy(coins = category.coins.map { coin ->
-                        coin.copy(
-                            highlight = change.enabled && coin.isHotMover
-                        )
-                    })
-                }
-            )
+            is CoinChange.HighlightMoversChanged -> state.copy(highlightMovers = change.enabled)
 
-            is CoinChange.CoinsLoaded -> state.copy(
-                categories = fullCategories.map { category ->
-                    category.copy(coins = category.coins.map { coin ->
-                        coin.copy(
-                            highlight = state.highlightMovers && coin.isHotMover
-                        )
-                    })
-                }
-            )
+            is CoinChange.CoinsLoaded -> state.copy(categories = change.categories)
+        }
+    }
+
+    init {
+        viewModelScope.launch {
+            for (action in actions) dispatch(action)
         }
     }
 }

@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
@@ -89,7 +90,9 @@ fun MainNavigation() {
 @Composable
 fun CoinListScreenContent() {
     val dependencies = LocalContext.current.findDependencies<CoinListDependencies>()
-    val component = DaggerCoinListComponent.factory().create(dependencies)
+    val component = remember {
+        DaggerCoinListComponent.factory().create(dependencies)
+    }
     val viewModel: CoinListViewModel = viewModel(factory = component.viewModelFactory())
     val state by viewModel.state.collectAsState()
 
@@ -111,7 +114,9 @@ fun CoinListScreenContent() {
 @Composable
 fun FavoriteCoinsScreenContent() {
     val dependencies = LocalContext.current.findDependencies<FavouritesDependencies>()
-    val component = DaggerFavouritesComponent.factory().create(dependencies)
+    val component = remember {
+        DaggerFavouritesComponent.factory().create(dependencies)
+    }
     val viewModel: FavoriteViewModel = viewModel(factory = component.viewModelFactory())
     val state by viewModel.state.collectAsState()
 

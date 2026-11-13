@@ -59,7 +59,10 @@ fun FavoriteCoinsScreen(
             LazyColumn(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                items(favoriteCoins) { coin ->
+                items(
+                    items = favoriteCoins,
+                    key = {it.id}
+                ) { coin ->
                     FavoriteCard(
                         favouriteCoin = coin,
                         onToggleFavourite = { onToggleFavourite(coin.id) },

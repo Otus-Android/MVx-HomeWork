@@ -15,6 +15,7 @@ import ru.otus.cryptomvisample.features.coins.CoinState
 @Composable
 fun HorizontalCoinList(
     coins: List<CoinState>,
+    highlightMovers: Boolean,
     onToggleFavourite: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -25,9 +26,13 @@ fun HorizontalCoinList(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         contentPadding = PaddingValues(horizontal = 16.dp)
     ) {
-        items(coins) { coin ->
+        items(
+            items = coins,
+            key = { coin -> coin.id }
+        ) { coin ->
             CoinCard(
                 coin = coin,
+                highlight = highlightMovers && coin.isHotMover,
                 onToggleFavourite = { onToggleFavourite(coin.id) },
                 modifier = Modifier.width(100.dp)
             )
